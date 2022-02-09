@@ -41,11 +41,6 @@
         // Call the display_title function and pass it the $post
 
 
-      /**
-       * Custom function for displaying the title and content for a post
-       *
-       * @param string $title The title to be displayed
-       */
       function display_title( $title ) {
 
         // Echo an <h3> tag with the $title inside
@@ -122,6 +117,62 @@
 
    $jophin = new Employee("jophin" , "24");
    $jophin->printDetails();
+
+   // day 2
+   $x= 10;
+   $y= 20 ;
+
+   $k= "hello" ;
+
+   $wor = "   world" ;
+
+   $z = "10";
+
+      echo "x == y ?";
+
+    var_dump($x == $y) ;
+
+    echo "x == z ?";
+
+    var_dump($x == $z) ;
+
+
+    var_dump($x === $z) ;
+
+    echo "x <> not equal z";
+
+    var_dump($x <> $z) ;
+
+    echo "no typecasting" ;
+
+
+echo "<br> x <=> spaceship z";
+
+    var_dump($y <=> $x) ;
+
+    echo "<br> concatenation and concat assignment<br>";
+
+  echo $k.$wor ;
+
+    $con =    $x.=$y;      // $x.=$y.=$k ;
+    echo "x and y" ;
+     var_dump($con) ;
+
+     echo "Null coalescing ";
+
+     // expresssion ?  condition1 : condition2 ;
+
+     echo $burke =  $__GET['q'] ?? "anonymous" ;
+
+    $string = "Jack and Jill went  up the hill to fetch a pail Of water.
+       <br> but only jack made on top of the hill as jill was a bit Ill" ;
+
+  $exp ="/of/i" ;
+
+  echo "<br>" ;
+
+  echo preg_match_all( $exp,  $string ) ;
+
 
   ?>
 </body>
