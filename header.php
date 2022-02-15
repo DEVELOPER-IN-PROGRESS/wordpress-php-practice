@@ -6,7 +6,6 @@
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=1024, initial-scale=1.0" >
 		<title><?php get_the_title()."|"." Naunce Investments";  ?> </title>
-		<link rel="profile" href="https://gmpg.org/xfn/11">
 
 		<?php wp_head(); ?>
 
@@ -45,6 +44,8 @@
 				<div class="">
 				  <nav class="ni__navmenu-nav">
 					 <ul>
+					   <li>
+					   </li>
 
 					</ul>
 				  </nav>

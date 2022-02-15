@@ -25,6 +25,10 @@ body {
   margin: 0px;
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
+}
+
 .ni__body-frontpage {
   background-color: transparent;
   background: url("./assets/bghome.jpg") repeat-x center top;
@@ -59,6 +63,43 @@ body {
   height: 50px;
 }
 
+.ni-atom-h1 {
+  color: #fff;
+  font-size: 26px;
+  font-weight: normal;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ni__banner-h1 {
+  margin-left: 50px;
+  font-size: 26px !important;
+}
+
+.ni-atom-h2 {
+  font-weight: bold;
+  color: #4e505b;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 15px;
+}
+
+.ni-atom-h3 {
+  font-size: 1.333em;
+  font-weight: bold;
+  line-height: 1.2em;
+  color: #5c5c5c;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.ni-atom-p {
+  color: #5c5c5c;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.5px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .ni-atom-a {
   color: #4f97cd;
   text-decoration: none;
@@ -66,6 +107,41 @@ body {
 
 .ni-atom-a:hover, .ni-atom-a:visited {
   text-decoration: underline;
+}
+
+.ni-atom-button {
+  font-size: 12px;
+  line-height: 14px;
+  color: #fff !important;
+  text-decoration: none !important;
+  display: inline-block;
+  padding: 4px 12px;
+  border: 0px solid #f2f2f2;
+  background: transparent url(./assets/button.png) repeat-x 0px -1px;
+}
+
+.ni-atom-button:hover {
+  background-position: 0px -26px;
+  border: 0px solid #f2f2f2;
+  color: #fff !important;
+}
+
+.ni-atom-button:active {
+  background-position: 0px -51px;
+  border: 0px solid #f2f2f2;
+  color: #fff !important;
+}
+
+.ni-atom-button:visited {
+  background-position: 0px -1px;
+  border: 0px solid #f2f2f2;
+  color: #fff !important;
+}
+
+.ni-atom-button:visited:hover {
+  background-position: 0px -26px;
+  border: 0px solid #f2f2f2;
+  color: #fff !important;
 }
 
 .ni-atom-utilitylinks {
@@ -114,6 +190,25 @@ body {
 .ni__image3-wrapper {
   display: flex;
   justify-content: space-between;
+}
+
+/* this is the css  for https://www.nuanceinvestments.com/disclosures  page */
+.ni__discl-p {
+  padding-top: 10px;
+}
+
+/* this is the css  for https://www.nuanceinvestments.com/about  page */
+.ni__greycard {
+  padding: 5px 20px;
+}
+
+.ni__greycard-h2 {
+  margin: 20px 0px 10px 0px;
+}
+
+.ni__greycard-p {
+  font-size: 12px;
+  line-height: 16px;
 }
 
 /*# sourceMappingURL=style.css.map */
