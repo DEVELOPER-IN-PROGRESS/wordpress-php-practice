@@ -206,13 +206,31 @@ h1, h2, h3, h4, h5, h6, p {
   list-style-type: none;
 }
 
+.ni-navmenu2__li {
+  width: 130px;
+}
+
 .nav_wrapper {
   margin-top: 22px;
 }
 
-.ni__navmenu-nav {
+.ni-navmenu__nav {
   background: #fff url("assets/greybg.jpg") repeat-x;
-  height: 40px;
+  height: 36px;
+}
+
+.ni-navmenu__nav-a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #cacaca;
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.ni-navmenu__nav-a:hover {
+  color: #f9f9f9;
+  opacity: 0.8;
+  text-decoration: none;
 }
 
 .ni-about__banner {
@@ -275,6 +293,42 @@ h1, h2, h3, h4, h5, h6, p {
   font-style: normal;
   font-weight: 400;
   line-height: 15px;
+}
+
+/* here goes the styles for home page  https://www.nuanceinvestments.com/tv */
+.ni-tv__wrapper {
+  background-color: #e5e6e5;
+  padding: 30px 60px 40px 40px;
+  float: left;
+  overflow: hidden;
+}
+
+.ni-tv__h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #3c425f;
+}
+
+.ni-tv__card {
+  width: 200px;
+  background-color: #fff;
+  float: left;
+  -moz-box-shadow: 0 0 8px #8a8a8a;
+  box-shadow: 0 0 8px #8a8a8a;
+  margin-right: 20px;
+  min-height: 185px;
+}
+
+.ni-tv__card-image {
+  width: 200px;
+  padding-bottom: 10px;
+}
+
+.ni-tv__card-p {
+  padding-left: 10px;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

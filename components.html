@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css "rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="bootstraplite.css"/>
@@ -24,9 +22,11 @@
   .ni__header{
     border: 1px solid black !important;
   }
+
   .py-5{
     margin-top: 20px;
   }
+
 </style>
   <body>
 
@@ -56,82 +56,48 @@
           </div>
 
           <div class="nav_wrapper">
-            <nav class="ni__navmenu-nav">
-            <ul class="ni__navmenu2 d-flex">
-                <li>
-                  <a href="/about" class="ni-atom-a">
-                    <p class="d-none">about us</p>
-                    <img src="assets/about.jpg" class="menuItems d-block"   alt="About us" />
-                    <img src="assets/about.jpg" class="menuItems d-none"   alt="About us" />
-                  </a>
-                </li>
-                <li>
-                  <img src="assets/thin.png" width="2"  alt="narrow" />
-                </li>
-                <li>
-                  <a href="/funds" class="ni-atom-a">
-                    <p class="d-none">Mutual funds </p>
-                    <img src="assets/mutual.jpg" class="menuItems d-block"   alt="mutual funds" />
-                    <img src="assets/mutualh.jpg" class="menuItems d-none"   alt="mutual funds" />
-                  </a>
-                </li>
-                <li>
-                  <img src="assets/thin.png" width="2"  alt="narrow" />
-                </li>
-                <li>
-                  <a href="/private-accounts" class="ni-atom-a">
-                    <p class="d-none">Private accounts</p>
-                    <img src="assets/private.jpg" class="menuItems d-block"   alt="Private accounts" />
-                    <img src="privateh.jpg" class="menuItems d-none"   alt="Private accounts" />
-                  </a>
-                </li>
-                <li>
-                  <img src="assets/thin.png" width="2"  alt="narrow" />
-                </li>
-                <li>
-                  <a href="/tv" class="ni-atom-a">
-                    <p class="d-none">Naunce Tv</p>
-                    <img src="assets/naunce.jpg" class="menuItems d-block"   alt="Naunce Tv" />
-                    <img src="assets/naunceh.jpg" class="menuItems d-none"   alt="Naunce Tv" />
-                  </a>
-                </li>
-                <li>
-                  <img src="assets/thin.png" width="2"  alt="narrow" />
-                </li>
-                <li>
-                  <a href="/knowledge-&-news" class="ni-atom-a">
-                    <p class="d-none">News and Awards</p>
-                    <img src="assets/news.jpg" class="menuItems d-block"   alt="News and Awards" />
-                    <img src="assets/newsh.jpg" class="menuItems d-none"   alt="News and Awards" />
-                  </a>
-                </li>
-                <li>
-                  <img src="assets/thin.png" width="2"  alt="narrow" />
-                </li>
-                <li>
-                  <a href="/invest" class="ni-atom-a">
-                    <p class="d-none">How to invest</p>
-                    <img src="assets/invest.jpg" class="menuItems d-block"   alt="How to invest" />
-                    <img src="assets/investh.jpg" class="menuItems d-none"   alt="How to invest" />
-                  </a>
-                </li>
+            <nav class="ni-navmenu__nav d-flex text-center">
 
-            </ul>
+               <a href="/about" class="ni-atom-a ni-navmenu__nav-a">
+                 <p style="width: 130px;"> About Us </p>
+               </a>
+
+               <img src="assets/thin.png" width="2"  alt="narrow" />
+
+               <a href="/funds" class="ni-atom-a ni-navmenu__nav-a">
+                <p style="width: 130px;"> Mutual Funds </p>
+               </a>
+
+                <img src="assets/thin.png" width="2"  alt="narrow" />
+
+                <a href="/private-accounts" class="ni-atom-a ni-navmenu__nav-a">
+                  <p style="width: 130px;">  Private Accounts </p>
+                </a>
+
+                <img src="assets/thin.png" width="2"  alt="narrow" />
+
+                <a href="/tv" class="ni-atom-a ni-navmenu__nav-a">
+                  <p style="width: 130px;">  NuanceTv </p>
+                </a>
+
+                <img src="assets/thin.png" width="2"  alt="narrow" />
+
+                <a href="/knowledge-&-news" class="ni-atom-a ni-navmenu__nav-a">
+                  <p style="width: 130px;">   News & Awards </p>
+                </a>
+                <img src="assets/thin.png" width="2"  alt="narrow" />
+
+                <a href="/invest" class="ni-atom-a ni-navmenu__nav-a">
+                  <p style="width: 130px;"> How to invest</p>
+                </a>
+
             </nav>
+
          </div>
-
-
-
-
 
 
         </header>
         </div>
-
-
-
-
-
 
     <div class="col-md-4" style="padding-top: 80px;">
 
@@ -165,15 +131,53 @@
             <a href="#" class="ni-atom-button" >how to invest</a>
         </div>
 
-
-
-
-
     </div>
 
-    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <h3 class="text-center py-5">https://www.nuanceinvestments.com/tv </h3>
+
+    <section class="ni-tv__wrapper">
+
+        <h2 class="ni-atom-h2 ni-tv__h2">Nuance Insights</h2>
+
+        <div class="ni-tv__card">
+          <a href="#">
+            <img src="https://i.ytimg.com/vi/hQB3OnGvUJY/mqdefault.jpg" class="ni-tv__card-image" alt="image" />
+          </a>
+          <p>
+            <a href="" class="ni-atom-a ni-tv__card-p" >Our Investment Process</a>
+          </p>
+        </div>
+
+        <div class="ni-tv__card">
+          <a href="#">
+            <img src="https://i.ytimg.com/vi/hQB3OnGvUJY/mqdefault.jpg" class="ni-tv__card-image" alt="image" />
+          </a>
+          <p>
+            <a href="" class="ni-atom-a ni-tv__card-p" >Our Investment Process</a>
+          </p>
+        </div>
+
+        <div class="ni-tv__card">
+          <a href="#">
+            <img src="https://i.ytimg.com/vi/hQB3OnGvUJY/mqdefault.jpg" class="ni-tv__card-image" alt="image" />
+          </a>
+          <p>
+            <a href="" class="ni-atom-a ni-tv__card-p" >Our Investment Process</a>
+          </p>
+        </div>
+
+        <div class="ni-tv__card">
+          <a href="#">
+            <img src="https://i.ytimg.com/vi/hQB3OnGvUJY/mqdefault.jpg" class="ni-tv__card-image" alt="image" />
+          </a>
+          <p>
+            <a href="" class="ni-atom-a ni-tv__card-p" >Our Investment Process</a>
+          </p>
+        </div>
+        
+
+    </section>
+
 
   </body>
 </html>

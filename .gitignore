@@ -1,4 +1,5 @@
 practice/
 lighthouse reports/
-*.css.map
+*.map
 style.css
+assets/css
