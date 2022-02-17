@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACA,8EAA8E;AAE9E,AAAA,YAAY,CAAC;EACV,WAAW,EAAE,IAAI;CAAG",
-    "sources": [
-        "../sass/disclosures.sass"
-    ],
-    "names": [],
-    "file": "disclosures.css"
-}
