@@ -96,8 +96,6 @@ h1,h2,h3,h4,h5,h6,p
     font-size: 1.167em
     line-height: 140%
     font-weight: bold
-
-
 .ni-atom-p
   color: $basegrey
   font-size: 15px
@@ -105,11 +103,17 @@ h1,h2,h3,h4,h5,h6,p
   font-weight: 400
   line-height: 19.5px
   font-family: $mainfont
-
+.ni-atom-footerlinks
+  font-size: 12px
+ 
 
 .ni-atom-a
- color: $baseblue
- text-decoration: none
+  color: $baseblue
+  text-decoration: none
+
+.ni-atom-footerdescription
+  font-size: 10px
+  color: rgb(163, 171, 173)
 
 .ni-atom-a--bold
   font-weight: bold
@@ -232,3 +236,24 @@ h1,h2,h3,h4,h5,h6,p
   border-radius: 10px
   margin-bottom: 30px
   padding: 5px 20px 10px 20px
+
+.ni-alert__wrapper
+  border-radius: 4px
+  padding: 15px
+  position: fixed
+  z-index: 1
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  overflow: auto
+  background-color: rgb(0,0,0)
+  background-color: rgba(0,0,0,0.4)
+
+.ni-alert__content
+  background-color: #fefefe
+  margin: 15% auto
+  padding: 20px 20px 40px 20px
+  border: 1px solid #888
+  width: 500px
+  border-radius: 4px
