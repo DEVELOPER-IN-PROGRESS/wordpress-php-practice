@@ -22,3 +22,9 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+ 
+function hamBurger(x) {
+  x.classList.toggle("change");
+ }
+
