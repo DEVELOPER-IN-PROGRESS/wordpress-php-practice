@@ -23,8 +23,4 @@ window.onclick = function(event) {
   }
 }
 
- 
-function hamBurger(x) {
-  x.classList.toggle("change");
- }
 

@@ -12,12 +12,6 @@
    display: flex
    justify-content: space-between
 
-#navmenu1
-  display: none
-
-#navmenu2
-  display: none
-
 .ni__navmenu-img
  width: 228px
  height: 50px
@@ -78,10 +72,49 @@
   background-color: #ccc
 
 .ni-header__accordion-panel
-    padding: 0 18px
+    padding: 15px 0px
+    float: left
     display: none
-    background-color: white
+    width: 100%
     overflow: hidden
+    border-style: solid
+    border-width: 0
+    background: #3a3b3a url(./assets/drop.png) repeat-x left top
+    border-right-color: #4c7fb2
+    border-right-width: 1px
+    border-bottom-color: #4c7fb2
+    border-bottom-width: 1px
+    border-left-color: #4c7fb2
+    border-left-width: 1px
+
+.ni-header__accordion-list
+    float: left
+    display: inline-block
+    padding: 0px 10px 0px 15px
+    margin: 0px
+    list-style-type: none
+
+.ni-header__accordion-link
+    color: #FFF !important
+    text-decoration: none
+    font-size: 13px
+    line-height: normal
+
+.ni-header__accordion-p
+    float: left
+    display: inline-block
+    width: 150px
+    padding: 0px 10px 0px 20px
+    border-left: 1px solid #5d5d5d
+    color: #999999
+.ni-header__accordion-p > p
+    font-size: 12px
+    line-height: 15px
+
+.ni-navmenu__nav-li
+    position: relative
+    display: flex
+    align-items: center
 
 
 @media screen and ( max-width: 767px)
@@ -89,6 +122,18 @@
        padding: 0px
        margin: 0px
        padding-top: 20px
+
+    .ni-header__sidebar
+       position: absolute
+
+       transform: translateX(-100vw)
+       transition: 0.3s ease-out
+
+    .ni-header__sidebar--active
+       top: 80px
+       transform: translateX(0vw)
+       transition: 0.3s ease-in
+
 
 @media screen and ( min-width: 768px)
     .hamburger
@@ -132,19 +177,20 @@
       padding: 0px 6px
 
     .ni-header__accordion-panel
-      width: 380px
+      min-width: 380px
       height: 140px
-      padding: 15px 0
-      background: #3a3b3a url(./assets/drop.png) repeat-x left top
+      display: none
+      opacity: 0
       position: absolute
       z-index: 1
       top: 26px
+      padding: 15px 18px
       left: 0px
-      border-style: solid
-      border-width: 0
-      border-right-color: #4c7fb2
-      border-right-width: 1px
-      border-bottom-color: #4c7fb2
-      border-bottom-width: 1px
-      border-left-color: #4c7fb2
-      border-left-width: 1px
+
+    .ni-navmenu__nav:last-child
+       background-color: red
+
+    .ni-navmenu__nav-li
+        &:hover .ni-header__accordion-panel
+          display: block
+          opacity: 1
