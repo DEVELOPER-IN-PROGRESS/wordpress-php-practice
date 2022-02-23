@@ -1,6 +1,8 @@
 
 /*  https://www.nuanceinvestments.com/commentary  page
 
+.ni-commentary__sidebar
+    margin: 0 auto 20px auto
 
 .ni-commentary__p1
     font-size: 16px
@@ -12,7 +14,7 @@
     font-size:  16px
     line-height: 19px
     font-style: normal
-    padding-bottom: 28px
+    padding-bottom: 18px
 
 .ni-commentary__img
     padding: 4px
@@ -21,10 +23,11 @@
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1)
     box-shadow: 0 1px 3px rgb(0 0 0 / 10%)
 
-.ni-commentary__sidebar
-    position: absolute
-    top: -1px
-    right: 19px
+@media screen and (min-width: 992px)
+    .ni-commentary__sidebar
+        position: absolute
+        top: -1px
+        right: 19px
 
 .ni__greycard-h3
   margin: 15px 0px 10px 0px
@@ -52,12 +55,36 @@
     margin-left: 7px
     padding-left: 14px
 
+.ni-commentary__border
+    border-bottom: 1px solid silver
+    padding: 10px 0px
+
+// header nav styles
+
+.navv
+    display: none
+    margin-top: 18px
+    width: 200px
+
+.navul
+    display: flex
+    align-items: top
+    background: #fff url('assets/greybg.jpg') repeat-x
+    list-style-type: none
+    margin: 0px
+    padding: 0px
+
+.aaa
+    display: block
+    width: 130px
+    height: 36px
+
 
 @media screen and (max-width:767px)
 
     .ni-commentary__p22
         font-size: 10px
-        
+
 
 
 

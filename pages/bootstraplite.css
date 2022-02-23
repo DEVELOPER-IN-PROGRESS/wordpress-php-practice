@@ -46,6 +46,9 @@
     display: none !important;
 }
 
+.list-style-none{
+  list-style-type: none;
+}
 .container,
 .container-fluid,
 .container-sm,

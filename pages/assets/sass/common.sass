@@ -20,11 +20,10 @@
 /* Use it to make something cool, have fun, and share what you've learned
 /*! with others.
 
-
-
 $baseblue: #4f97cd
 $basegrey: #5c5c5c
 $mainfont:  Arial, Helvetica, sans-serif
+$mainwidth: calc(100vw - 40px)
 
 /* add this as additional css-class to  remove default margins from gutenberg blocks
 .nomargin
@@ -32,6 +31,11 @@ $mainfont:  Arial, Helvetica, sans-serif
 
 body
   margin: 0px
+  padding: 20px
+
+#maincontent
+  width: $mainwidth
+  margin: 0 auto
 
 h1,h2,h3,h4,h5,h6,p
   margin: 0px
@@ -40,22 +44,41 @@ h1,h2,h3,h4,h5,h6,p
    background-color: transparent
    background: url('./assets/bghome.jpg') repeat-x center top
 
-.ni__common-body
-  background: #cacbcd url(./assets/_body.gif) repeat-y center 50%
-  margin: 0px
-  padding: 0px
 
-.header-wrapper
-   position: relative
+.ni-about__banner
+  width: 300px
+  height: 100px
+  position: relative
+  margin: 0 auto
 
-   z-index: 900!important
+@media screen and ( min-width:768px )
 
-.ni__header
-   position: absolute
-   width: 980px
-   left: 50%
-   top: 27px
-   transform: translate(-50% , -50%)
+
+
+@media screen and ( min-width:992px )
+    body
+      padding: 0px
+      margin: 0px
+
+    #maincontent
+      width: 980px
+      padding: 0px
+      overflow-x: clip
+
+    .ni__common-body
+        background: #cacbcd url(./assets/_body.gif) repeat-y center 50%
+        margin: 0px
+        padding: 0px
+
+
+    .ni-about__banner
+        width:980px
+        height: 100px
+        position: relative
+        margin: 0 auto
+
+
+
 
 .ni__logotext
    display: none
@@ -124,6 +147,9 @@ h1,h2,h3,h4,h5,h6,p
   color: $baseblue
   text-decoration: none
 
+.ni-atom-a:visited
+  color: none
+
 .ni-atom-footerdescription
   font-size: 10px
   color: rgb(163, 171, 173)
@@ -139,7 +165,7 @@ h1,h2,h3,h4,h5,h6,p
     display: block
     padding-left: 20px
 
-.ni-atom-a:hover , .ni-atom-a:visited
+.ni-atom-a:hover
  color: $baseblue
  text-decoration: underline
 
@@ -200,29 +226,6 @@ h1,h2,h3,h4,h5,h6,p
  font-weight: 700
  line-height: 18px
 
-.ni__navmenu-inner-li
- border-left: 1px solid #4f97cd
-
-.ni__navmenu-img
- width: 228px
- height: 50px
- position: absolute
- left: -1px
- top: -3.5px
-
-.ni__navmenu-inner
- position: absolute
- right: -4px
- top: -3px
- display: flex
- list-style-type: none
- align-items: center
- margin: 0px
- height: 50px
- padding: 0px
-
-.ni__navmenu-inner > li
- padding: 0px 6px
 
 .ni__navmenu2
   margin: 0
@@ -232,33 +235,23 @@ h1,h2,h3,h4,h5,h6,p
 .ni-navmenu2__li
   width: 130px
 
-.nav_wrapper
-   position: absolute
-   top: 64px
-   left: 0
-   right: 0
 
-.ni-navmenu__nav
-  background: #fff url('assets/greybg.jpg') repeat-x
-  height: 36px
+
 
 .ni-navmenu__nav-a
   font-size: 14px
   font-weight: 600
-  color: #cacaca
+  color: #cacaca !important
   opacity: 0.6
   text-decoration: none
 
+.ni-navmenu__nav-a:visited
+  color: inherit
+
 .ni-navmenu__nav-a:hover
-  color: #f9f9f9
+  color: #f9f9f9 !important
   opacity: 0.9
   text-decoration: none
-
-.ni-about__banner
-  width:980px
-  height: 100px
-  position: relative
-  margin: 0 auto
 
 .sidecard-wrapper
   position: relative

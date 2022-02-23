@@ -1,0 +1,196 @@
+/*  Header styles
+
+.header-wrapper
+   position: relative
+   z-index: 900!important
+
+.ni-header__dropdown
+   display: block
+
+
+.ni-header__navmenu1
+   display: flex
+   justify-content: space-between
+
+.ni__navmenu-img
+ width: 228px
+ height: 50px
+ position: absolute
+ left: 10px
+ top:  0px
+
+.hamburger
+    display: inline-block
+    cursor: pointer
+
+.bar1, .bar2, .bar3
+  width: 35px
+  height: 4px
+  background-color: black
+  margin: 6px 0
+  transition: 0.4s
+
+.change .bar1
+  -webkit-transform: rotate(-45deg) translate(-7px, 6px)
+  transform: rotate(-45deg) translate(-7px, 6px)
+
+.change .bar2
+    opacity: 0
+
+.change .bar3
+  -webkit-transform: rotate(45deg) translate(-8px, -8px)
+  transform: rotate(45deg) translate(-8px, -8px)
+
+.ni__navmenu-inner
+  padding: 0
+  margin: 0
+  list-style-type: none
+  // display: block
+  display: flex
+  justify-content: space-between
+
+.nav_wrapper
+   display: block
+
+.ni-navmenu__nav
+   display: block
+   list-style-type: none
+
+.ni-header__accordion
+    background-color: #eee
+    color: #444
+    cursor: pointer
+    padding: 18px
+    width: $mainwidth
+    border: none
+    text-align: left
+    outline: none
+    font-size: 15px
+    transition: 0.4s
+
+.active, .ni-header__accordion:hover
+  background-color: #ccc
+
+.ni-header__accordion-panel
+    padding: 15px 0px
+    float: left
+    display: none
+    width: 100%
+    overflow: hidden
+    border-style: solid
+    border-width: 0
+    background: #3a3b3a url(./assets/drop.png) repeat-x left top
+    border-right-color: #4c7fb2
+    border-right-width: 1px
+    border-bottom-color: #4c7fb2
+    border-bottom-width: 1px
+    border-left-color: #4c7fb2
+    border-left-width: 1px
+
+.ni-header__accordion-list
+    float: left
+    display: inline-block
+    padding: 0px 10px 0px 15px
+    margin: 0px
+    list-style-type: none
+
+.ni-header__accordion-link
+    color: #FFF !important
+    text-decoration: none
+    font-size: 13px
+    line-height: normal
+
+.ni-header__accordion-p
+    float: left
+    display: inline-block
+    width: 150px
+    padding: 0px 10px 0px 20px
+    border-left: 1px solid #5d5d5d
+    color: #999999
+.ni-header__accordion-p > p
+    font-size: 12px
+    line-height: 15px
+
+.ni-navmenu__nav-li
+    position: relative
+    display: flex
+    align-items: center
+
+
+@media screen and ( max-width: 767px)
+    .ni-navmenu__nav
+       padding: 0px
+       margin: 0px
+       padding-top: 20px
+
+    .ni-header__sidebar
+       position: absolute
+
+       transform: translateX(-100vw)
+       transition: 0.3s ease-out
+
+    .ni-header__sidebar--active
+       top: 80px
+       transform: translateX(0vw)
+       transition: 0.3s ease-in
+
+
+@media screen and ( min-width: 768px)
+    .hamburger
+        display: none
+
+    .ni-navmenu__nav
+      display: flex
+      background: #fff url('assets/greybg.jpg') repeat-x
+      margin: 0px
+      padding: 0px
+      align-items: center
+      height: 36px
+
+    .nav_wrapper
+      position: absolute
+      top: 64px
+      left: 0
+      right: 0
+
+
+@media screen and ( min-width: 992px)
+    .ni__header
+      margin: 20px auto 0px auto
+      width: 80vw
+
+    .ni__navmenu-inner-li
+      border-left: 1px solid #4f97cd
+
+    .ni__navmenu-inner
+      position: absolute
+      right: -4px
+      top: -3px
+      display: flex
+      list-style-type: none
+      align-items: center
+      margin: 0px
+      height: 50px
+      padding: 0px
+
+    .ni__navmenu-inner > li
+      padding: 0px 6px
+
+    .ni-header__accordion-panel
+      min-width: 380px
+      height: 140px
+      display: none
+      opacity: 0
+      position: absolute
+      z-index: 1
+      top: 26px
+      padding: 15px 18px
+      left: 0px
+
+    .ni-navmenu__nav:last-child
+       background-color: red
+
+    .ni-navmenu__nav-li
+        &:hover .ni-header__accordion-panel
+          display: block
+          opacity: 1
