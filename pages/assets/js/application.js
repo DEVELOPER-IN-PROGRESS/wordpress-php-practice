@@ -2,10 +2,14 @@ let isIconClicked = false ;
 let headerAccordion = document.querySelectorAll('.ni-header__accordion');
 let listElems = document.querySelectorAll('.ni-navmenu__nav-li');
 
-
 function hamBurger(x) {
-    x.classList.toggle("change");
+     x.classList.toggle("change");
     openCloseMenu();
+}
+
+function closeSideBar(){
+    let x = document.getElementById('hamburgerMenu');
+    hamBurger(x) ;
 }
 
 function openCloseMenu(){
