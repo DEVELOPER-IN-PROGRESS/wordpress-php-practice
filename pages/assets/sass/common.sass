@@ -29,6 +29,10 @@ $mainwidth: calc(100vw - 40px)
 .nomargin
   margin: 0px
 
+.centerdiv
+  margin-left: auto
+  margin-right: auto
+
 body
   margin: 0px
   padding: 20px
@@ -40,66 +44,6 @@ body
 h1,h2,h3,h4,h5,h6,p
   margin: 0px
 
-.ni__body-frontpage
-   background-color: transparent
-   background: url('./assets/bghome.jpg') repeat-x center top
-
-
-.ni-about__banner
-  width: $mainwidth
-  height: 100px
-  position: relative
-  margin: 0 auto
-
-.ni-about__banner-image
-  width: 100%
-  height: 100px
-
-@media screen and ( min-width:768px )
-
-
-
-@media screen and ( min-width:992px )
-    body
-      padding: 0px
-      margin: 0px
-
-    #maincontent
-      width: 980px
-      padding: 0px
-      overflow-x: clip
-
-    .ni__common-body
-        background: #cacbcd url(./assets/_body.gif) repeat-y center 50%
-        margin: 0px
-        padding: 0px
-
-
-    .ni-about__banner
-        width:980px
-        height: 100px
-        position: relative
-        margin: 0 auto
-
-
-
-
-.ni__logotext
-   display: none
-
-#logo
-  width: 228px
-  height: 50px
-  background: transparent url(./assets/logo.png) no-repeat left top
-  position: absolute
-  left: -1px
-  top: -1px
-
-.ni__main-content
-  width: 1000px
-  border: 1px solid black
-  margin: 0 auto
-
 .ni-atom-logo
  width: 228px
  height: 50px
@@ -109,11 +53,6 @@ h1,h2,h3,h4,h5,h6,p
   font-size: 26px
   font-weight: normal
   font-family: $mainfont
-
-.ni-imgbanner__h1
-  position: absolute
-  top: 38px
-  left: 50px
 
 
 .ni-atom-h2
@@ -133,6 +72,7 @@ h1,h2,h3,h4,h5,h6,p
 .ni-atom-h4
     color: $basegrey
     font-size: 1.167em
+    font-family: $mainfont
     line-height: 140%
     font-weight: bold
 .ni-atom-p
@@ -142,6 +82,8 @@ h1,h2,h3,h4,h5,h6,p
   font-weight: 400
   line-height: 19.5px
   font-family: $mainfont
+
+
 .ni-atom-footerlinks
   font-size: 12px
 
@@ -211,6 +153,152 @@ h1,h2,h3,h4,h5,h6,p
  color: white
  text-decoration: none
 
+
+
+
+.ni__body-frontpage
+   background-color: transparent
+   background: url('./assets/bghome.jpg') repeat-x center top
+
+
+.ni-about__banner
+  width: $mainwidth
+  height: 100px
+  position: relative
+  margin: 0 auto
+
+.ni-about__banner-image
+  width: 100%
+  height: 100px
+
+.ni-org-footer
+    padding: 20px 0px
+    margin: 0 auto
+    max-width: $mainwidth
+
+.ni-footer__wrapper
+    display: grid
+    margin: 0 auto
+    grid-template-columns: 1fr 1fr
+    row-gap: 30px
+    column-gap: 0px
+
+.ni-footer__a
+    font-size: 15px
+    line-height: 19px
+
+.ni-footer__menu > p
+    margin: 0px 0px 6px 0px
+
+.ni-footer__a--lin
+    padding: 2px 0px 0px 23px
+    background: transparent url(./assets/linkedin.png) no-repeat 0px -1px
+
+.ni-footer__a--tw
+    padding: 2px 0px 0px 23px
+    background: transparent url(./assets/twitter.png) no-repeat 0px -1px
+
+.ni-footer__a--fb
+    padding: 2px 0px 0px 23px
+    background: transparent url(./assets/fb.png) no-repeat 0px -1px
+
+@media screen and ( max-width:767px  )
+  .ni__navmenu-a
+     font-size: 16px
+
+  .ni__navmenu-inner
+    padding-top: 20px !important
+
+
+  .ni-footer__menu
+
+  .ni-footer__h4
+    font-size: 17px
+    line-height: 19px
+    height: 36px
+    padding-bottom: 10px
+    // font-size: 12px
+    // line-height: 16.8px
+
+
+
+
+
+@media screen and ( min-width:768px )
+  .ni-footer__wrapper
+    justify-items: stretch
+
+  .ni-footer__h4
+    font-size: 14px
+    line-height: 16.8px
+    margin-bottom: 10px
+
+
+@media screen and ( min-width:992px )
+    body
+      padding: 0px
+      margin: 0px
+
+    #maincontent
+      width: 980px
+      padding: 0px
+      overflow-x: clip
+
+    .ni__common-body
+        background: #cacbcd url(./assets/_body.gif) repeat-y center 50%
+        margin: 0px
+        padding: 0px
+
+
+    .ni-about__banner
+        width:980px
+        height: 100px
+        position: relative
+        margin: 0 auto
+
+
+    .ni-footer__wrapper
+      justify-content: center
+      grid-template-columns: 228px 228px 228px 228px
+      column-gap: 20px
+      width: $mainwidth
+
+    .ni-footer__menu > p
+      margin: 0px !important
+
+
+    .ni-footer__h4
+      font-size: 12px
+      line-height: 16.8px
+      margin-bottom: 10px
+
+    .ni-footer__a
+       font-size: 12px
+       font-weight: 400
+       line-height: 18px
+
+.ni__logotext
+   display: none
+
+#logo
+  width: 228px
+  height: 50px
+  background: transparent url(./assets/logo.png) no-repeat left top
+  position: absolute
+  left: -1px
+  top: -1px
+
+.ni__main-content
+  width: 1000px
+  border: 1px solid black
+  margin: 0 auto
+
+
+.ni-imgbanner__h1
+  position: absolute
+  top: 38px
+  left: 50px
+
 .ni__navmenu
  margin: 20px auto 0px auto
  display: flex
@@ -267,7 +355,7 @@ h1,h2,h3,h4,h5,h6,p
   -moz-border-radius: 10px
   border-radius: 10px
   margin-bottom: 30px
-  padding: 5px 20px 10px 20px
+  padding: 5px 20px 20px 20px
 
 .ni-alert__wrapper
   border-radius: 4px
@@ -289,3 +377,7 @@ h1,h2,h3,h4,h5,h6,p
   border: 1px solid #888
   width: 500px
   border-radius: 4px
+
+
+
+

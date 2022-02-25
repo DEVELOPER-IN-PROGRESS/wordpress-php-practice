@@ -3,6 +3,7 @@ $liwidth : calc( (100vw -20px) / 6)
 .header-wrapper
    position: relative
    z-index: 900!important
+   margin-bottom: 10px
 
 .ni-header__dropdown
    display: block
@@ -140,10 +141,13 @@ $liwidth : calc( (100vw -20px) / 6)
     .hamburger
         display: none
 
+    .header-wrapper
+      margin: 26px auto 0px auto
+
     .ni-navmenu__nav
       display: flex
       background: #fff url('assets/greybg.jpg') repeat-x
-      margin: 0px
+      margin: 10px 0px 0px 0px
       padding: 0px
       align-items: center
       height: 36px
@@ -164,7 +168,6 @@ $liwidth : calc( (100vw -20px) / 6)
 @media screen and ( min-width: 992px)
     .header-wrapper
       max-width: 980px
-      margin: 0 auto
 
     // .ni__header
     //   margin: 20px auto 0px auto
@@ -174,11 +177,13 @@ $liwidth : calc( (100vw -20px) / 6)
 
     .ni__navmenu-inner
       position: absolute
-      right: -4px
+      width: auto
+      right: 0px
       top: -3px
       display: flex
       list-style-type: none
       align-items: center
+      justify-content: center
       margin: 0px
       height: 50px
       padding: 0px
