@@ -5,268 +5,281 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="device-width, initial-scale=1.0" />
     <title>Manager Commentary | Nuance Investments</title>
+    <link rel="icon" type="image/icon" href="assets/favicon.ico">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="bootstraplite.css" />
   </head>
   <body class="ni__common-body">
-    <main id="maincontent" role="main">
-      <div class="header-wrapper">
-        <header id="site-header" class="ni__header" role="banner">
-          <div class="ni-header__navmenu1">
-            <a href="/" id="log" role="logo" title="nuance logo">
-              <img
-                width="228"
-                height="50"
-                class=" "
-                src="./assets/logo.png"
-                alt="naunce logo"
-              />
-            </a>
+    <div class="header-wrapper">
+      <header id="site-header" class="ni__header" role="banner">
+        <div class="ni-header__navmenu1">
+          <a href="/" id="log" role="logo" title="nuance logo">
+            <img
+              width="228"
+              height="50"
+              class=" "
+              src="./assets/logo.png"
+              alt="naunce logo"
+            />
+          </a>
 
-            <div
-              class="hamburger"
-              id="hamburgerMenu"
-              onclick="hamBurger(this);"
-            >
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-            </div>
+          <div
+            class="hamburger"
+            id="hamburgerMenu"
+            onclick="hamBurger(this);"
+          >
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+
+        <div class="d-md-block">
+          <ul class="ni__navmenu-inner list-style-none text-center">
+            <li class="ni__navmenu-inner-li">
+              <a class="ni-atom-a ni__navmenu-a" href="/">Home</a>
+            </li>
+            <li class="ni__navmenu-inner-li">
+              <a class="ni-atom-a ni__navmenu-a" href="/about">About us</a>
+            </li>
+            <li class="ni__navmenu-inner-li">
+              <a class="ni-atom-a ni__navmenu-a" href="/contact"
+                >Contact us</a
+              >
+            </li>
+            <li class="ni__navmenu-inner-li">
+              <a class="ni-atom-a ni__navmenu-a" href="/news">News</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav_wrapper d-md-block ni-header__sidebar" id="navmenu2">
+          <div class="hamburger change d-md-none" style="padding:20px 0px 0px 20px;" onclick="closeSideBar();" >
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
           </div>
 
-          <div class="d-md-block">
-            <ul class="ni__navmenu-inner text-center">
-              <li class="ni__navmenu-inner-li">
-                <a class="ni-atom-a ni__navmenu-a" href="/">Home</a>
-              </li>
-              <li class="ni__navmenu-inner-li">
-                <a class="ni-atom-a ni__navmenu-a" href="/about">About us</a>
-              </li>
-              <li class="ni__navmenu-inner-li">
-                <a class="ni-atom-a ni__navmenu-a" href="/contact"
-                  >Contact us</a
+          <nav class="text-center">
+            <ul class="ni-navmenu__nav">
+              <li  class="ni-navmenu__nav-li">
+                <a
+                  href="/about"
+                  class="d-none d-md-block ni-atom-a ni-navmenu__nav-a "
                 >
-              </li>
-              <li class="ni__navmenu-inner-li">
-                <a class="ni-atom-a ni__navmenu-a" href="/news">News</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="nav_wrapper d-md-block ni-header__sidebar" id="navmenu2">
-            <nav class="text-center">
-              <ul class="ni-navmenu__nav">
-                <li  class="ni-navmenu__nav-li">
-                  <a
-                    href="/about"
-                    class="ni-atom-a ni-navmenu__nav-a  d-none d-lg-block d-none d-lg-block"
-                  >
-                    <p style="width: 130px;">About Us</p>
-                  </a>
-                  <button class="ni-header__accordion d-md-none">
-                    <a href="/tv" class="ni-atom-a"> About Us</a>
-                  </button>
-                  <div class="ni-header__accordion-panel text-left">
-
-                      <ul class="ni-header__accordion-list">
-                        <li><a href="../about" class="ni-atom-a ni-header__accordion-link">Overview</a></li>
-                        <li><a href="../philosophy" class="ni-atom-a ni-header__accordion-link">Our Philosophy</a></li>
-                        <li><a href="../team" class="ni-atom-a ni-header__accordion-link">Our Team</a></li>
-                        <li><a href="../contact" class="ni-atom-a ni-header__accordion-link">Contact Us</a></li>
-                       </ul>
-
-                      <div class="ni-header__accordion-p">
-                        <p class="ni-atom-p">We provide investment management services focused specifically on value style investments.</p>
-                      </div>
-                  </div>
-                </li>
-
-                <li>
-                  <img
-                    src="assets/thin.png"
-                    width="2"
-                    alt="narrow"
-                    class="d-none d-md-block"
-                  />
-                </li>
-
-                <li  class="ni-navmenu__nav-li">
-                  <a
-                    href="/funds"
-                    class="ni-atom-a ni-navmenu__nav-a  d-none d-lg-block"
-                  >
-                    <p style="width: 130px;">Mutual Funds</p>
-                  </a>
-                  <button class="ni-header__accordion d-md-none ">
-                    Mutual Funds
-                  </button>
-                  <div class="ni-header__accordion-panel text-left">
+                  <p >About Us</p>
+                </a>
+                <button class="ni-header__accordion d-md-none">
+                  <a href="/tv" class="ni-atom-a"> About Us</a>
+                </button>
+                <div class="ni-header__accordion-panel text-left">
 
                     <ul class="ni-header__accordion-list">
-                      <li><a href="../funds" class="ni-atom-a ni-header__accordion-link">Overview</a></li>
-                      <li>
-                        <a href="../concentrated-value-fund" class="ni-atom-a ni-header__accordion-link">Nuance Concentrated Value Fund
-                        </a>
-                      </li>
-                      <li>
-                        <a href="../concentrated-value-long-short-fund" class="ni-atom-a ni-header__accordion-link">Nuance Concentrated Value <br>
-                          Long-Short Fund
-                        </a>
-                      </li>
-                      <li>
-                        <a href="../mid-cap-value-fund" class="ni-atom-a ni-header__accordion-link">Nuance Mid Cap Value Fund
-                        </a>
-                      </li>
-                      <li>
-                        <a href="../invest-mutual-funds" class="ni-atom-a ni-header__accordion-link">How to Invest
-                        </a>
-                      </li>
-                      <li>
-                        <a href="../mutual-fund-news" class="ni-atom-a ni-header__accordion-link">Mutual Fund News
-                        </a>
-                      </li>
+                      <li><a href="../about" class="ni-atom-a ni-header__accordion-link">Overview</a></li>
+                      <li><a href="../philosophy" class="ni-atom-a ni-header__accordion-link">Our Philosophy</a></li>
+                      <li><a href="../team" class="ni-atom-a ni-header__accordion-link">Our Team</a></li>
+                      <li><a href="../contact" class="ni-atom-a ni-header__accordion-link">Contact Us</a></li>
                      </ul>
 
                     <div class="ni-header__accordion-p">
                       <p class="ni-atom-p">We provide investment management services focused specifically on value style investments.</p>
                     </div>
+                </div>
+              </li>
+
+              <li>
+                <img
+                  src="assets/thin.png"
+                  width="2"
+                  alt="narrow"
+                  class="d-none d-md-block"
+                />
+              </li>
+
+              <li  class="ni-navmenu__nav-li">
+                <a
+                  href="/funds"
+                  class="d-none d-md-block ni-atom-a ni-navmenu__nav-a  "
+                >
+                  <p >Mutual Funds</p>
+                </a>
+                <button class="ni-header__accordion d-md-none ">
+                  Mutual Funds
+                </button>
+
+                <div class="ni-header__accordion-panel text-left">
+
+                  <ul class="ni-header__accordion-list">
+                    <li><a href="../funds" class="ni-atom-a ni-header__accordion-link">Overview</a></li>
+                    <li>
+                      <a href="../concentrated-value-fund" class="ni-atom-a ni-header__accordion-link">Nuance Concentrated Value Fund
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../concentrated-value-long-short-fund" class="ni-atom-a ni-header__accordion-link">Nuance Concentrated Value <br>
+                        Long-Short Fund
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../mid-cap-value-fund" class="ni-atom-a ni-header__accordion-link">Nuance Mid Cap Value Fund
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../invest-mutual-funds" class="ni-atom-a ni-header__accordion-link">How to Invest
+                      </a>
+                    </li>
+                    <li>
+                      <a href="../mutual-fund-news" class="ni-atom-a ni-header__accordion-link">Mutual Fund News
+                      </a>
+                    </li>
+                   </ul>
+
+                  <div class="ni-header__accordion-p">
+                    <p class="ni-atom-p">We provide investment management services focused specifically on value style investments.</p>
                   </div>
-                </li>
+                </div>
 
-                <li>
-                  <img
-                    src="assets/thin.png"
-                    width="2"
-                    alt="narrow"
-                    class="d-none d-md-block"
-                  />
-                </li>
 
-                <li class="ni-navmenu__nav-li">
-                  <a
-                    href="/private-accounts"
-                    class="ni-atom-a ni-navmenu__nav-a  d-none d-lg-block"
-                  >
-                    <p style="width: 130px;">Private Accounts</p>
-                  </a>
-                  <button class="ni-header__accordion d-md-none ">
-                    Private Accounts
-                  </button>
-                  <div class="ni-header__accordion-panel text-left">
+              </li>
 
-                    <ul class="ni-header__accordion-list">
-                      <li><a href="../private-accounts" class="ni-atom-a ni-header__accordion-link">Overview</a></li>
-                      <li><a href="../mid-cap-value" class="ni-atom-a ni-header__accordion-link">Nuance Mid Cap Value</a></li>
-                      <li><a href="../concentrated-value" class="ni-atom-a ni-header__accordion-link"> Nuance Concentrated Value</a></li>
+              <li>
+                <img
+                  src="assets/thin.png"
+                  width="2"
+                  alt="narrow"
+                  class="d-none d-md-block"
+                />
+              </li>
 
-                     </ul>
+              <li class="ni-navmenu__nav-li">
+                <a
+                  href="/private-accounts"
+                  class="d-none d-md-block ni-atom-a ni-navmenu__nav-a  "
+                >
+                  <p >Private Accounts</p>
+                </a>
+                <button class="ni-header__accordion d-md-none ">
+                  Private Accounts
+                </button>
+                <div class="ni-header__accordion-panel text-left">
 
-                      <div class="ni-header__accordion-p">
-                        <p class="ni-atom-p">Explore the latest information on our Private Account products. </p>
-                      </div>
-                  </div>
-                </li>
+                  <ul class="ni-header__accordion-list">
+                    <li><a href="../private-accounts" class="ni-atom-a ni-header__accordion-link">Overview</a></li>
+                    <li><a href="../mid-cap-value" class="ni-atom-a ni-header__accordion-link">Nuance Mid Cap Value</a></li>
+                    <li><a href="../concentrated-value" class="ni-atom-a ni-header__accordion-link"> Nuance Concentrated Value</a></li>
 
-                <li>
-                  <img
-                    src="assets/thin.png"
-                    width="2"
-                    alt="narrow"
-                    class="d-none d-md-block"
-                  />
-                </li>
-
-                <li class="ni-navmenu__nav-li">
-                  <a
-                    href="/tv"
-                    class="ni-atom-a ni-navmenu__nav-a  d-none d-lg-block"
-                  >
-                    <p style="width: 130px;">NuanceTv</p>
-                  </a>
-                  <button class="ni-header__accordion d-md-none ">
-                    NuanceTv
-                  </button>
-                </li>
-
-                <li>
-                  <img
-                    src="assets/thin.png"
-                    width="2"
-                    alt="narrow"
-                    class="d-none d-md-block"
-                  />
-                </li>
-
-                <li class="ni-navmenu__nav-li">
-                  <a
-                    href="/knowledge-&-news"
-                    class="ni-atom-a ni-navmenu__nav-a  d-none d-lg-block"
-                  >
-                    <p style="width: 130px;">News & Awards</p>
-                  </a>
-                  <button class="ni-header__accordion d-md-none ">
-                    News & Awards
-                  </button>
-                  <div class="ni-header__accordion-panel text-left">
-
-                    <ul class="ni-header__accordion-list">
-                      <li><a href="../knowledge-&-news" class="ni-atom-a ni-header__accordion-link">Overview</a></li>
-                      <li><a href="../commentary" class="ni-atom-a ni-header__accordion-link">Manager Commentary</a></li>
-                      <li><a href="../knowledge" class="ni-atom-a ni-header__accordion-link">Knowledge </a></li>
-                       <li><a href="../news" class="ni-atom-a ni-header__accordion-link">News </a></li>
-                       <li><a href="../awards" class="ni-atom-a ni-header__accordion-link">Awards </a></li>
-                       <li><a href="../articles" class="ni-atom-a ni-header__accordion-link">Articles of Interest </a></li>
-
-                     </ul>
-
-                      <div class="ni-header__accordion-p">
-                        <p class="ni-atom-p">We are defined by our philosophy as we invest and serve clients globally.  </p>
-                      </div>
-                  </div>
-                </li>
-
-                <li>
-                  <img
-                    src="assets/thin.png"
-                    width="2"
-                    alt="narrow"
-                    class="d-none d-md-block"
-                  />
-                </li>
-
-                <li class="ni-navmenu__nav-li">
-                  <a
-                    href="/invest"
-                    class="ni-atom-a ni-navmenu__nav-a  d-none d-lg-block"
-                  >
-                    <p style="width: 130px;">How to invest</p>
-                  </a>
-                  <button class="ni-header__accordion d-md-none">
-                    How to invest
-                  </button>
-                  <div class="ni-header__accordion-panel text-left">
-
-                    <ul class="ni-header__accordion-list">
-                      <li><a href="../invest" class="ni-atom-a ni-header__accordion-link">Overview</a></li>
-                      <li><a href="../forms" class="ni-atom-a ni-header__accordion-link">Forms and Applications</a></li>
-                      <li><a href="../contact" class="ni-atom-a ni-header__accordion-link">Contact Us</a></li>
-                     </ul>
+                   </ul>
 
                     <div class="ni-header__accordion-p">
-                      <p class="ni-atom-p">We are committed to offering world class value style investment products. </p>
+                      <p class="ni-atom-p">Explore the latest information on our Private Account products. </p>
                     </div>
                 </div>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-      </div>
+              </li>
 
-      <!-- <div class="ni-about__banner">
-          <img src="https://www.nuanceinvestments.com/uploads/images/billboard-bg-980x100.jpg" />
+              <li>
+                <img
+                  src="assets/thin.png"
+                  width="2"
+                  alt="narrow"
+                  class="d-none d-md-block"
+                />
+              </li>
+
+              <li class="ni-navmenu__nav-li">
+                <a
+                  href="/tv"
+                  class="d-none d-md-block ni-atom-a ni-navmenu__nav-a  "
+                >
+                  <p >NuanceTv</p>
+                </a>
+                <button class="ni-header__accordion d-md-none ">
+                  NuanceTv
+                </button>
+              </li>
+
+              <li>
+                <img
+                  src="assets/thin.png"
+                  width="2"
+                  alt="narrow"
+                  class="d-none d-md-block"
+                />
+              </li>
+
+              <li class="ni-navmenu__nav-li">
+                <a
+                  href="/knowledge-&-news"
+                  class="d-none d-md-block ni-atom-a ni-navmenu__nav-a  "
+                >
+                  <p >News & Awards</p>
+                </a>
+                <button class="ni-header__accordion d-md-none ">
+                  News & Awards
+                </button>
+                <div class="ni-header__accordion-panel text-left">
+
+                  <ul class="ni-header__accordion-list">
+                    <li><a href="../knowledge-&-news" class="ni-atom-a ni-header__accordion-link">Overview</a></li>
+                    <li><a href="../commentary" class="ni-atom-a ni-header__accordion-link">Manager Commentary</a></li>
+                    <li><a href="../knowledge" class="ni-atom-a ni-header__accordion-link">Knowledge </a></li>
+                     <li><a href="../news" class="ni-atom-a ni-header__accordion-link">News </a></li>
+                     <li><a href="../awards" class="ni-atom-a ni-header__accordion-link">Awards </a></li>
+                     <li><a href="../articles" class="ni-atom-a ni-header__accordion-link">Articles of Interest </a></li>
+
+                   </ul>
+
+                    <div class="ni-header__accordion-p">
+                      <p class="ni-atom-p">We are defined by our philosophy as we invest and serve clients globally.  </p>
+                    </div>
+                </div>
+              </li>
+
+              <li>
+                <img
+                  src="assets/thin.png"
+                  width="2"
+                  alt="narrow"
+                  class="d-none d-md-block"
+                />
+              </li>
+
+              <li class="ni-navmenu__nav-li">
+                <a
+                  href="/invest"
+                  class="d-none d-md-block ni-atom-a ni-navmenu__nav-a  "
+                >
+                  <p >How to invest</p>
+                </a>
+                <button class="ni-header__accordion d-md-none">
+                  How to invest
+                </button>
+                <div class="ni-header__accordion-panel text-left">
+
+                  <ul class="ni-header__accordion-list">
+                    <li><a href="../invest" class="ni-atom-a ni-header__accordion-link">Overview</a></li>
+                    <li><a href="../forms" class="ni-atom-a ni-header__accordion-link">Forms and Applications</a></li>
+                    <li><a href="../contact" class="ni-atom-a ni-header__accordion-link">Contact Us</a></li>
+                   </ul>
+
+                  <div class="ni-header__accordion-p">
+                    <p class="ni-atom-p">We are committed to offering world class value style investment products. </p>
+                  </div>
+              </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+
+    <main id="maincontent" role="main">
+
+      <div class="ni-about__banner">
+          <img src="https://www.nuanceinvestments.com/uploads/images/billboard-bg-980x100.jpg" class="ni-about__banner-image" />
           <h1 class="ni-atom-h1 ni-imgbanner__h1">Manager Commentary</h1>
-        </div> -->
+        </div>
+
 
       <div style="padding: 15px;"></div>
 
@@ -302,7 +315,7 @@
           </h3>
 
           <div class="row space-between no-gutters ni-commentary__border">
-            <div class="col-2">
+            <div class="col-4 col-sm-3 col-md-3 col-lg-2">
               <img
                 src="https://www.nuanceinvestments.com/uploads/images/121613.jpg"
                 alt="some low quality image"
@@ -311,7 +324,7 @@
                 class="ni-commentary__img"
               />
             </div>
-            <div class="col-10">
+            <div class="col-8 col-sm-9  col-md-9 col-lg-10">
               <p class="ni-atom-p ni-commentary__p2">December 2021</p>
 
               <h4 class="ni-atom-h4 ni-molc-desc__h4 ni-commentary__a2">
@@ -335,7 +348,7 @@
           </div>
 
           <div class="row space-between no-gutters ni-commentary__border">
-            <div class="col-2">
+            <div class="col-4 col-sm-3 col-md-3 col-lg-2">
               <img
                 src="https://www.nuanceinvestments.com/uploads/images/121613.jpg"
                 alt="some low quality image"
@@ -344,7 +357,7 @@
                 class="ni-commentary__img"
               />
             </div>
-            <div class="col-10">
+            <div class="col-8 col-sm-9  col-md-9 col-lg-10">
               <p class="ni-atom-p ni-commentary__p2">December 2021</p>
 
               <h4 class="ni-atom-h4 ni-molc-desc__h4 ni-commentary__a2">

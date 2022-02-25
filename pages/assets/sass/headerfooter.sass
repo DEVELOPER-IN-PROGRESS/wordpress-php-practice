@@ -1,16 +1,11 @@
 /*  Header styles
-
+$liwidth : calc( (100vw -20px) / 6)
 .header-wrapper
    position: relative
    z-index: 900!important
 
 .ni-header__dropdown
    display: block
-
-
-.ni-header__navmenu1
-   display: flex
-   justify-content: space-between
 
 .ni__navmenu-img
  width: 228px
@@ -41,20 +36,19 @@
   -webkit-transform: rotate(45deg) translate(-8px, -8px)
   transform: rotate(45deg) translate(-8px, -8px)
 
-.ni__navmenu-inner
-  padding: 0
-  margin: 0
-  list-style-type: none
-  // display: block
-  display: flex
-  justify-content: space-between
-
 .nav_wrapper
    display: block
 
 .ni-navmenu__nav
    display: block
    list-style-type: none
+
+.ni__navmenu-inner
+    padding: 0
+    margin: 0
+    list-style-type: none
+    display: flex
+    justify-content: space-between
 
 .ni-header__accordion
     background-color: #eee
@@ -113,26 +107,33 @@
 
 .ni-navmenu__nav-li
     position: relative
-    display: flex
-    align-items: center
+
 
 
 @media screen and ( max-width: 767px)
     .ni-navmenu__nav
        padding: 0px
        margin: 0px
-       padding-top: 20px
+
+    .ni-header__navmenu1
+      display: flex
+      justify-content: space-between
 
     .ni-header__sidebar
-       position: absolute
-
-       transform: translateX(-100vw)
+       background-color: #eee
+       position: fixed
+       transform: translateX(100vw)
        transition: 0.3s ease-out
 
     .ni-header__sidebar--active
-       top: 80px
+       right: 0
+       bottom: 0
+       top: 100px
+       z-index: 999
+       margin-right: -20px
        transform: translateX(0vw)
        transition: 0.3s ease-in
+
 
 
 @media screen and ( min-width: 768px)
@@ -147,17 +148,26 @@
       align-items: center
       height: 36px
 
-    .nav_wrapper
-      position: absolute
-      top: 64px
-      left: 0
-      right: 0
+    .ni-navmenu__nav-li
+       display: flex
+       align-items: center
+       height: 100%
+       width: $liwidth
+       justify-content: center
 
+    .ni__navmenu-inner
+       width: 200px
+       position: absolute
+       top: 0px
+       right: 0px
 
 @media screen and ( min-width: 992px)
-    .ni__header
-      margin: 20px auto 0px auto
-      width: 80vw
+    .header-wrapper
+      max-width: 980px
+      margin: 0 auto
+
+    // .ni__header
+    //   margin: 20px auto 0px auto
 
     .ni__navmenu-inner-li
       border-left: 1px solid #4f97cd
@@ -183,14 +193,21 @@
       opacity: 0
       position: absolute
       z-index: 1
-      top: 26px
+      top: 36px
       padding: 15px 18px
       left: 0px
 
-    .ni-navmenu__nav:last-child
-       background-color: red
+    .nav_wrapper
+      position: static
+
+
+
 
     .ni-navmenu__nav-li
+        width: 130px
         &:hover .ni-header__accordion-panel
           display: block
           opacity: 1
+
+    .ni-navmenu__nav-li:hover
+        cursor: pointer
