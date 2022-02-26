@@ -1,32 +1,63 @@
 /* here goes the styles for home page  https://www.nuanceinvestments.com/tv
 
-
 .ni-tv__wrapper
     background-color: #e5e6e5
-    padding: 30px 60px 40px 40px
-    float: left
-    overflow: hidden
+    padding: 30px 5px 40px 5px
+    margin-bottom: 10px
+
+.ni-tv__gridwrap
+    display: grid
+    justify-content: center
+    grid-template-columns: 1fr 1fr
+    column-gap: 20px
+    grid-row-gap: 25px
 
 .ni-tv__h2
+    text-align: center
     font-size: 18px
     font-weight: bold
     margin-bottom: 20px
     color: #3c425f
 
 .ni-tv__card
-    width: 200px
     background-color: #fff
-    float: left
     -moz-box-shadow: 0 0 8px #8a8a8a
     box-shadow: 0 0 8px #8a8a8a
-    margin-right: 20px
-    min-height: 185px
+    padding-bottom: 40px
 
 .ni-tv__card-image
-    width: 200px
+    width: 100%
     padding-bottom: 10px
 
-.ni-tv__card-p
-    padding-left: 10px
+.ni-tv__card-a
     font-size: 13px
     font-weight: bold
+
+.ni-tv__p1
+    font-size: 12px
+    color: #3c6b93
+    padding-top: 20px
+    line-height: 15.6px
+
+@media screen and ( min-width:768px)
+    .ni-tv__h2
+        text-align: left
+        margin-bottom: 30px
+
+    .ni-tv__gridwrap
+        grid-template-columns: 1fr 1fr 1fr
+
+
+    .ni-tv__wrapper
+         padding: 30px 25px 40px 25px
+
+@media screen and ( min-width:992px)
+    .ni-tv__gridwrap
+        grid-template-columns: 200px 200px 200px 200px
+        justify-content: flex-start
+
+    .ni-tv__wrapper
+         padding-left: 40px
+
+    .ni-tv__p1
+        padding-right: 19px
