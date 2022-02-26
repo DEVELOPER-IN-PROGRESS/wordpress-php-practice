@@ -22,9 +22,10 @@
 
 $baseblue: #4f97cd
 $basegrey: #5c5c5c
+$grey2: #e5e5e5
 $mainfont:  Arial, Helvetica, sans-serif
 $mainwidth: calc(100vw - 40px)
-
+$compadding: 20px
 /* add this as additional css-class to  remove default margins from gutenberg blocks
 .nomargin
   margin: 0px
@@ -35,10 +36,11 @@ $mainwidth: calc(100vw - 40px)
 
 body
   margin: 0px
-  padding: 20px
+  height: 100%
+  font-family: $mainfont
 
 #maincontent
-  width: $mainwidth
+  // width: $mainwidth
   margin: 0 auto
 
 h1,h2,h3,h4,h5,h6,p
@@ -62,6 +64,9 @@ h1,h2,h3,h4,h5,h6,p
   font-family: $mainfont
   line-height: 15px
 
+.ni-atom-h2--grey
+  color: $basegrey
+
 .ni-atom-h3
   font-size: 1.333em
   font-weight: bold
@@ -75,6 +80,7 @@ h1,h2,h3,h4,h5,h6,p
     font-family: $mainfont
     line-height: 140%
     font-weight: bold
+
 .ni-atom-p
   color: $basegrey
   font-size: 15px
@@ -153,16 +159,12 @@ h1,h2,h3,h4,h5,h6,p
  color: white
  text-decoration: none
 
-
-
-
 .ni__body-frontpage
    background-color: transparent
    background: url('./assets/bghome.jpg') repeat-x center top
 
-
 .ni-about__banner
-  width: $mainwidth
+  // width: $mainwidth
   height: 100px
   position: relative
   margin: 0 auto
@@ -203,6 +205,9 @@ h1,h2,h3,h4,h5,h6,p
     background: transparent url(./assets/fb.png) no-repeat 0px -1px
 
 @media screen and ( max-width:767px  )
+  body
+    padding: 0px
+
   .ni__navmenu-a
      font-size: 16px
 
@@ -225,6 +230,11 @@ h1,h2,h3,h4,h5,h6,p
 
 
 @media screen and ( min-width:768px )
+  body
+    padding: 0px $compadding
+
+  #maincontent
+    width: $mainwidth
   .ni-footer__wrapper
     justify-items: stretch
 
