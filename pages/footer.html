@@ -4,90 +4,151 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=1024">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- <meta name="viewport" content="width=1024"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Naunce</title>
-    <link rel="stylesheet" href="/assets/css/headerfooter.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstraplite.css" />
 </head>
 
 <body>
+<style>
+     .ni-atom-newsh3{
+        font-size: 13px;
+    color: white;
+    font-weight: bold;
+    padding-left: 10px;
+    }
+    @media only screen and (max-width: 768px){
 
-    <footer class="container n-org-footer-container">
-        <div class="row">
-            <div class="col-3">
+.ni-atom-newsh3{
+    font-size: 13px;
+color: white;
+font-weight: bold;
+padding-left: 10px;
+}
 
-                <ul class="m-molc-footer-list">
-                    <h4 class="ni-footer-menuhead">Investment Solutions</h4>
-                    <li class="list-unstyled m-footer-list"><a id="fundslink2" href="../funds"
-                            class="n-atom-font">Mutual Funds</a></li>
-                    <li class="list-unstyled"><a href="../private-accounts" class="n-atom-font">Private Accounts</a>
-                    </li>
-                </ul>
+  
 
+.ni-gridwrapper{
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+padding: 10px;
+
+gap: 10px;
+}
+    }
+    @media only screen and (min-width: 768px){
+    .ni-gridwrapper{
+        display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5px;
+    gap: 10px;
+    }
+}
+@media only screen and (min-width: 962px){
+
+.ni-gridwrapper{
+    display: grid;
+grid-template-columns: 310px 310px 310px;
+justify-content: center;
+gap: 20px;
+}
+
+.ni-atom-news{
+    width: 43% !important;
+    text-align: center;
+}
+}
+
+</style>
+
+       <div class="container-fluid no-gutters" style="background-color: rgb(99,112,122) !important;padding: 0px !important;" >
+        <div class="ni-atom-news">
+            <h3 class="ni-atom-newsh3">News&Updates</h3> 
+        </div> 
+        
+
+        <div class="ni-gridwrapper" >
+                <div>
+                    <img src="assets/nuance-promo-c1.png" alt="" class="ni-atom-img">
+                </div>
+                
+            
+            <div>
+                <img src="/assets/nuance-ownership-promo-c2.jpg" alt=""  class="ni-atom-img">
             </div>
-            <div class="col-3">
+               
+           
+            <div>
+                <img src="assets/nounce-promo-c3.png" alt="" class="ni-atom-img">
+            </div>
+                
+           
+        </div>
+    </div>
 
-                <ul class="m-molc-footer-list">
-                    <h4 class="ni-footer-menuhead">Investor Resources</h4>
-                    <li class="list-unstyled m-footer-list"><a href="../invest" class="n-atom-font">How to Invest</a>
-                    </li>
-                    <li class="list-unstyled"><a href="../tv" class="n-atom-font">NuanceTV</a></li>
-                </ul>
-            </div>
-            <div class="col-3">
-                <ul class="m-molc-footer-list">
-                    <h4 class="ni-footer-menuhead">Investor Resources</h4>
-                    <li class="m-footer-list list-unstyled"><a href="../about" class="n-atom-font">About Us</a></li>
-                    <li class="list-unstyled"><a href="../investment-team" class="n-atom-font">Investment Team</a></li>
-                </ul>
-            </div>
-            <div class="col-3">
 
-                <ul class="m-molc-footer-list">
-                    <h4 class="ni-footer-menuhead">Investor Resources</h4>
-                    <li class="list-unstyled m-footer-list"><a
-                            href="https://www.linkedin.com/company/nuance-investments-llc" class="n-atom-font"
-                            target="_blank"><img
-                                src="https://res.cloudinary.com/auki-digital-solutions/image/upload/v1644575225/icons/iconsln.png"
-                                class="me-2">On
-                            LinkedIn</a></li>
-                    <li class="list-unstyled m-footer-list list-unstyled"><a href="" class="n-atom-font"
-                            target="_blank"><img
-                                src="https://res.cloudinary.com/auki-digital-solutions/image/upload/v1644575225/icons/iconstwiter.png"
-                                class="me-2">On
-                            Twitter</a></li>
-                    <li class="list-unstyled m-footer-list"><a
-                            href="https://www.linkedin.com/company/nuance-investments-llc" class="n-atom-font"
-                            target="_blank"><img
-                                src="https://res.cloudinary.com/auki-digital-solutions/image/upload/v1644575224/icons/iconsfb.png"
-                                class="me-2">On
-                            Facebook</a></li>
-                </ul>
-            </div>
+<footer class="ni-org-footer">
+    <div class="ni-footer__wrapper">
+
+        <div class="ni-footer__menu">
+          <h4 class="ni-atom-h4  ni-footer__h4">Investment Solutions</h4>
+          <p >
+            <a id="fundslink2" href="../funds"
+                  class="ni-atom-a ni-atom-footerlinks ni-footer__a">Mutual Funds</a>
+          </p>
+          <p >
+            <a href="../private-accounts" class="ni-atom-a ni-atom-footerlinks ni-footer__a">Private Accounts</a>
+          </p>
 
         </div>
-        <div class="row pt-3">
-            <ul class="d-flex n-molicule-footer-listitems">
-                <li class="ps-4 pe-1 list-unstyled n-atom-footerlistitems"><a href="../legal" class="n-atom-font">©
-                        Nuance Investments LLC, All rights reserved.</a></li>
-                <li style="border-left: 1px solid #bec5c7;" class="px-1 list-unstyled"><a
-                        href="/uploads/PrivacyPolicy.pdf" target="_blank" class="n-atom-font">Privacy statement</a></li>
-                <li style="border-left: 1px solid #bec5c7;" class="px-1 list-unstyled"><a href="../disclosures"
-                        class="n-atom-font">Disclosures</a></li>
-                <li style="border-left: 1px solid #bec5c7;" class="px-1 list-unstyled"><a href="/uploads/ADVPartII.pdf"
-                        target="_blank" class="n-atom-font">Disclosure Brochure</a></li>
-                <li style="border-left: 1px solid #bec5c7;" class="px-1 list-unstyled"><a
-                        href="/pdf/Nuance Form CRS (Final).pdf" target="_blank" class="n-atom-font">Form CRS</a></li>
-                <li style="border-left: 1px solid #bec5c7;" class="px-1 list-unstyled"><a
-                        href="/pdf/Nuance Form CRS (Final).pdf" target="_blank" class="n-atom-font">Contact us</a></li>
-            </ul>
-            <p> &nbsp;</p>
-            <p class="ps-5 n-atom-footer-loctionfont">Nuance Investments, LLC • 4900 Main Street, Suite 220, Kansas
-                City, MO 64112 </p>
+
+        <div class="ni-footer__menu">
+          <h4 class="ni-atom-h4  ni-footer__h4">Investor Resources</h4>
+          <p >
+            <a id="fundslink2" href="../invest"
+                  class="ni-atom-a ni-atom-footerlinks ni-footer__a">How to Invest</a>
+          </p>
+          <p >
+            <a href="../tv" class="ni-atom-a ni-atom-footerlinks ni-footer__a">NuanceTv</a>
+          </p>
         </div>
-    </footer>
+
+        <div class="ni-footer__menu">
+          <h4 class="ni-atom-h4  ni-footer__h4">About Nuance Investments</h4>
+          <p >
+            <a id="fundslink2" href="../about"
+                  class="ni-atom-a ni-atom-footerlinks ni-footer__a">About Us</a>
+          </p>
+          <p >
+            <a href="../team" class="ni-atom-a ni-atom-footerlinks ni-footer__a">Investment Team</a>
+          </p>
+        </div>
+
+        <div class="ni-footer__menu">
+          <h4 class="ni-atom-h4  ni-footer__h4">Connect with Us</h4>
+          <p >
+            <a id="fundslink2" href="../invest"
+                  class="ni-atom-a ni-atom-footerlinks ni-footer__a ni-footer__a--lin
+                  ">On LinkedIn</a>
+          </p>
+          <p >
+            <a id="fundslink2" href="../invest"
+                  class="ni-atom-a ni-atom-footerlinks ni-footer__a ni-footer__a--tw
+                  ">On Twitter</a>
+          </p>
+          <p >
+            <a href="../tv" class="ni-atom-a  ni-atom-footerlinks ni-footer__a ni-footer__a--fb">On Facebook</a>
+          </p>
+        </div>
+    </div>
+</footer>
+
+<div class="container">
+    
+</div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

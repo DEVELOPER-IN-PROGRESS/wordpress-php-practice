@@ -1,7 +1,7 @@
-/* here goes the styles for home page  https://www.nuanceinvestments.com/tv
+/* here goes the styles for page  https://www.nuanceinvestments.com/tv  ;  https://www.nuanceinvestments.com/knowledge
 
 .ni-tv__wrapper
-    background-color: #e5e6e5
+    background-color:  $grey2
     padding: 30px 5px 40px 5px
     margin-bottom: 10px
 
@@ -39,6 +39,26 @@
     padding-top: 20px
     line-height: 15.6px
 
+.ni-knowl__grid
+    display: grid
+    grid-template-columns: 1fr
+    background-color: #FFF
+    gap:4px
+
+
+.ni-knowl__wrap
+    padding: 20px 0px
+    background-color: $grey2
+
+.ni-knowl__h2
+    font-size: 15px
+    margin: 0px 20px 20px 20px
+
+.ni-knowl__gwrapper
+    display: grid
+    grid-template-columns: 1fr 1fr
+    column-gap: 20px
+
 @media screen and ( min-width:768px)
     .ni-tv__h2
         text-align: left
@@ -51,6 +71,16 @@
     .ni-tv__wrapper
          padding: 30px 25px 40px 25px
 
+    .ni-knowl__h2
+        margin: 0px
+        margin-bottom: 20px
+
+    .ni-knowl__wrap
+       padding: 20px
+    .ni-knowl__grid
+        // padding: 0px 20px
+        grid-template-columns: 1fr 1fr
+
 @media screen and ( min-width:992px)
     .ni-tv__gridwrap
         grid-template-columns: 200px 200px 200px 200px
@@ -61,3 +91,9 @@
 
     .ni-tv__p1
         padding-right: 19px
+
+    .ni-knowl__grid
+        padding: 0px
+
+    .ni-knowl__gwrapper
+        grid-template-columns: 200px 200px

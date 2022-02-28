@@ -6,29 +6,464 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="bootstraplite.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="bootstraplite.css"/> -->
+    <script src="https://use.fontawesome.com/02dc719b27.js"></script>
+    <script src="https://use.fontawesome.com/8e14040649.js"></script>
     <title>Document</title>
 </head>
+<style>
+    .ni-atom-newsh3 {
+        font-size: 13px;
+        color: white;
+        font-weight: bold;
+        padding-left: 10px;
+    }
+    .table{
+        width: 50%;
+    }
+
+    th {
+        background-color: #4B555B !important;
+        font-size: 12px;
+        color: white;
+    }
+    td{
+        font-size: 12px;
+        text-align: end;
+    }
+    .ni-table-width{
+        padding: 0px;
+    }
+    @media only screen and (max-width: 767px) {
+        .table{
+        width: 0%;
+    }
+    th {
+        background-color: #4B555B !important;
+        font-size: 5px;
+        color: white;
+    }
+    td{
+        font-size: 8px;
+        text-align: end;
+    }
+        .carousel-caption {
+            width: auto;
+            height: 280px;
+            text-align: left !important;
+            padding: 0px !important;
+            bottom: 30% !important;
+            text-align: center !important;
+            background: rgba(33, 39, 44, 0.9);
+
+            left: 0;
+            right: 0;
+
+        }
+
+        .n-carouseltv__overlay {
+            max-width: 410px;
+            height: 300px !important;
+            background: #FFFFFF !important;
+            opacity: .9;
+        }
+
+        .ni-atom-button {
+            font-size: 10px;
+        }
+
+        .ni-atom-iconcontains {
+            width: 6% !important;
+        }
+
+        .ni-atom-carouselimg {
+            height: 100vh;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        .ni-carousel-indicators {
+            right: 0 !important;
+            bottom: -10px !important;
+            width: 9% !important;
+            left: 70% !important;
+
+        }
+
+        .n-carouseltv__overlay {
+            max-width: 410px;
+            height: 215px !important;
+            background: #FFFFFF !important;
+            opacity: .9;
+        }
+
+        .carousel-caption {
+            position: absolute !important;
+            width: 600px !important;
+            text-align: left !important;
+            padding: 0px !important;
+            bottom: 18% !important;
+            height: 250px !important;
+            background: rgba(33, 39, 44, 0.9);
+            left: 10%;
+        }
+
+        .n-carouseltv__overlay {
+            max-width: 410px;
+            height: 215px !important;
+            background: #FFFFFF !important;
+            opacity: .9;
+        }
+
+        .ni-carousel-indicators {
+            right: 0 !important;
+            bottom: 3px !important;
+            color: white !important;
+            width: 6% !important;
+            left: 74% !important;
+
+        }
+    }
+
+    @media only screen and (min-width: 962px) {
+
+        .carousel-caption {
+            width: 600px !important;
+            text-align: left !important;
+            padding: 0px !important;
+            bottom: 18% !important;
+            height: 250px !important;
+            background: rgba(33, 39, 44, 0.9);
+        }
+
+        .n-carouseltv__overlay {
+            max-width: 410px;
+            height: 215px !important;
+            background: #FFFFFF !important;
+            opacity: .9;
+        }
+
+        .ni-carousel-indicators {
+            right: 0 !important;
+            bottom: 3px !important;
+            color: white !important;
+            width: 5% !important;
+            left: 74% !important;
+
+        }
+        .table{
+            width: 50% !important;
+        }
+
+    }
+</style>
 
 <body>
 
-    <div class="container" style="display: grid !important;grid-template-columns: 1fr !important;">
-        <div class="row no-gutters ">
-           
-                <img src="assets/nuance-promo-c1.png" alt="" class="ni-atom-width">
-            
-            
-                <img src="/assets/nuance-ownership-promo-c2.jpg" alt=""  class="ni-atom-width">
-           
-            
-                <img src="assets/nounce-promo-c3.png" alt="" class="ni-atom-width">
-           
+
+
+    <div class="container-xxl p-0">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/naunce-tv-c2.jpg" class="d-block w-100 ni-atom-carouselimg" alt="...">
+                    <div class="carousel-caption">
+                        <div style="padding: 15px; top: 10px !important;">
+                            <h4 class="ni-atom-h4 ni__carouselh4"> Value. Delivered1.</h4>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="n-atom-p ni__carouselsubp"><b>Nuance Mid Cap Value <br />
+                                            Separate Account</b></p>
+                                </div>
+                                <div class="col-3">
+                                    <p class="n-atom-p ni__carouselcatp">category <br /> midvalue</p>
+                                </div>
+                                <div class="col-3">
+                                    <p class="n-atom-p ni__carouselcatp">overall rating<br>★★★★★</p>
+
+                                </div>
+                            </div>
+                            <hr style="margin:5px 0px !important">
+                            <p class="n-atom-p ni__carouselmidcapp"> Out of 119 Mid-Cap Value separate accounts, as of
+                                12/31/2021</p>
+
+                            <p class=" n-atom-p ni__carouselmidcapp"><b>The top 10% of separate accounts in a category
+                                    receive 5
+                                    stars, the next 22.5% receive 4</b><br>
+                                <a class="ni-atom-button mt-3"><strong>Learn More about our
+                                        recent
+                                        Overall Morningstar Ratings</strong></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/naunce-tv-c3.jpg" class="d-block w-100 ni-atom-carouselimg" alt="...">
+                    <div class="carousel-caption">
+                        <div style="padding: 15px; top: 10px !important;">
+                            <h4 class="ni-atom-h4 ni__carouselh4">Value. Delivered.</h4>
+                            <div class="row">
+                                <div class="col-6">
+                                    <p class="n-atom-p ni__carouselsubp"> <b>Nuance Concentrated Value <br />
+                                            Separate Account</b></p>
+                                </div>
+                                <div class="col-3">
+                                    <p class="n-atom-p ni__carouselcatp">category <br /> midvalue</p>
+                                </div>
+                                <div class="col-3">
+                                    <p class="n-atom-p ni__carouselcatp">rating<br>★★★</p>
+
+                                </div>
+                            </div>
+                            <hr style="margin: 5px 0px;">
+                            <p class="n-atom-p ni__carouselmidcapp">Out of 119 Mid-Cap Value separate accounts, as of
+                                12/31/2021
+                            </p>
+
+                            <p class="n-atom-p ni__carouselmidcapp"><b>The top 10% of separate accounts in a category
+                                    receive 5
+                                    stars, the next 22.5% receive 4</b><br>
+                                <a class="mt-3 ni-atom-button" id="" href="../awards-mid-cap-value"><strong>Learn More
+                                        about our
+                                        recent
+                                        Overall Morningstar Ratings</strong></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/nuance-tv-c1.jpg" class="d-block w-100 ni-atom-carouselimg" alt="...">
+                    <div class="carousel-caption">
+                        <div style="padding: 15px; top: 10px !important;">
+                            <h4 class="ni-atom-h4 ni__carouselh4">Nuance Concentrated
+                                Value Sharpe Ratio11</h4>
+
+                            <p class="ni__carouselsubp">
+                                Separate Account</p>
+                            <p class="ni__carouselsubp">
+                                <b> 1st Percentile Sharpe Ratio <br>
+                                    6 of 895 Morningstar Peers since inception*</b>
+                            </p>
+
+
+
+                            <hr>
+                            <p class="ni-atom-h2 ni__carouselmidcapp">*Since inception 11/30/2008 to 12/31/2021
+                            </p>
+
+
+                            <a class="ni-atom-button " id="" href="../awards-mid-cap-value"><strong>Learn More
+                                    about our
+                                    recent
+                                    Overall Morningstar Ratings</strong></a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/nuance-tv-c1.jpg" class="d-block w-100 ni-atom-carouselimg" alt="...">
+                    <div class="carousel-caption">
+                        <div style="padding: 15px; top: 10px !important;">
+                            <h4 class="ni-atom-h4 ni__carouselh4">Nuance Concentrated
+                                Value Sharpe Ratio</h4>
+
+                            <p class="ni__carouselsubp">
+                                Separate Account</p>
+                            <p class="ni__carouselsubp">
+                                <b>1st Percentile Sharpe Ratio <br>
+                                    1 of 292 Morningstar Peers since inception*</b>
+                            </p>
+
+
+                            <hr>
+                            <p class="ni-atom-h2 ni__carouselmidcapp">*Since inception 11/30/2008 to 12/31/2021
+                            </p>
+
+
+                            <a class="ni-atom-button" id="" href="../awards-mid-cap-value"><strong>Learn More
+                                    about our
+                                    recent
+                                    Overall Morningstar Ratings</strong></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/nuance-tv-c1.jpg" class="d-block w-100 ni-atom-carouselimg" alt="...">
+                    <div class="carousel-caption n-carouseltv__overlay" style="padding: 20px !important;">
+                        <h4 class="ni__carouselh4 ni__carouseltvh4"><b>Watch NuanceTV</b></h4>
+                        <p class="mt-3 ni-atom-p ni__carouseltvh4 "><b>Keep up to date with insight into our Nuance
+                                process, our
+                                Nuance investment strategies and issues impacting the market.</b></p>
+                        <a class="ni-atom-button" id="" href="../awards-mid-cap-value"><strong>Watch Nuance TV
+                                Now</strong></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-none d-lg-block">
+                <div class="carousel-indicators  ni-carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0"
+                        class="active ni-atom-carouselindicator" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1"
+                        aria-label="Slide 2" class="ni-atom-carouselindicator"></button>
+                    <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2"
+                        aria-label="Slide 3" class="ni-atom-carouselindicator"></button>
+                    <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="3"
+                        aria-label="Slide 4" class="ni-atom-carouselindicator"></button>
+                    <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="4"
+                        aria-label="Slide 5" class="ni-atom-carouselindicator"></button>
+                </div>
+            </div>
+            <div class="ni-atom-iconcontains d-none d-md-block">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <img src="assets/rs-minimal-white-left.png">
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <img src="assets/rs-minimal-white-right.png">
+                </button>
+            </div>
+            <div class="d-block d-md-none">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container my-5">
+        <div class="row">
+            <div class="col col-lg-3 col-md-3 col-sm-12 ni-sidebar-left">
+                <div style="background-color: #F4F4F4;">
+                    <div class="px-3 ni-sidebar-left ni-sidebar-left__nobackground ">
+                        <div class="ni-atom-litertureback">
+                            <p class="pt-3 ps-2 text-dark"><b>Literature</b></p>
+                        </div>
+                    </div>
+                    <div class="ni-sidebar-leftp">
+                        <p>
+                            <a href="#" class="pb-1 pni-atom-a ni-atom-pdf">Fact Sheet</a>
+                        </p>
+                        <p>
+                            <a href="#" class="pb-1 ni-atom-a ni-atom-pdf">prospectus</a>
+                        </p>
+                        <p>
+                            <a href="#" class="pb-1 ni-atom-a ni-atom-pdf">Summary Prospectus</a>
+                        </p>
+                        <p>
+                            <a href="#" class="pb-1 ni-atom-a ni-atom-pdf">SAI</a>
+                        </p>
+                        <p>
+                            <a href="#" class="pb-1 ni-atom-a ni-atom-pdf">Privacy Policy</a>
+                        </p>
+                        <p>
+                            <a href="#" class="pb-1 ni-atom-a ni-atom-pdf">Semi-Annual Report</a>
+                        </p>
+                        <p>
+                            <a href="#" class="pb-1 ni-atom-a ni-atom-pdf">Annual-report</a>
+                        </p>
+                        <p>
+                            <a href="#" class="pb-1 ni-atom-a ni-atom-pdf">2016-Form 8937</a>
+                        </p>
+                    </div>
+                    <hr style="margin: 10px;">
+                    <div style="margin-left: 30px !important;"> <a href="#"
+                            style="font-size: 12px;color: #4f97cd;"><b>how to invest</b><img src="assets/morearrow.gif"
+                                style="padding: 5px;" /></a></div>
+
+                    <hr style="border-top: 2px solid #3366cc; height: 1px;margin: 10px;">
+                </div>
+
+            </div>
         </div>
     </div>
 
+    <div class="container-xxl" style="overflow: hidden;">
+        <div class="row">
+            <div class="col-12 ni-table-width">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
 
+                            <th scope="col"> QTD 2021</th>
+                            <th scope="col">YTD 2021</th>
+                            <th scope="col">1 year</th>
+                            <th scope="col">1 year</th>
+                            <th scope="col">1 year</th>
+                            <th scope="col">1 year</th>
+                            <th scope="col">1 year</th>
+                            <th scope="col"> Since Inception Return</th>
+                            <th scope="col"> Gross Expense Ratio as of current prospectus </th>
+                            <th scope="col">1 year</th>
+                            <th scope="col">1 year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td class="text-start"><b>Nuance<br> Concentrated<br> Value Fund<br> Institutional<br> (NCVLX) </b></td>
+                            <td>2.71</td>
+                            <td>9.5</td>
+                            <td>9.5</td>
+                            <td>9.5</td>
+                            <td>9.5</td>
+                            <td>9.5</td>
+                            <td>9.5</td>
+                            <td>9.5</td>
+                            <td>9.5</td>
+                            <td>9.5</td>
+
+                        </tr>
+                        <tr>
+
+                            <td class="text-start"><b>Russell 3000<br> Value Index</b> </td>
+                            <td>2.71</td>
+                            <td>9.5</td>
+                            <td>9.5</td>
+                            <td>9.5</td>
+                            <td>9.5</td>
+                            <td>9.5</td>
+                            <td>9.5</td>
+                            <td>9.5</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                        <tr>
+
+                            <td class="text-start"><b>S&P 500 <br>Index</b> </td>
+                            <td>2.71</td>
+                            <td>9.5</td>
+                            <td>9.5</td>
+                            <td>9.5</td>
+                            <td>9.5</td>
+                            <td>9.5</td>
+                            <td>9.5</td>
+                            <td>9.5</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

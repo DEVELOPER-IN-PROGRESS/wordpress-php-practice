@@ -22,9 +22,10 @@
 
 $baseblue: #4f97cd
 $basegrey: #5c5c5c
-$mainfont: Arial, Helvetica, sans-serif
+$grey2: #e5e5e5
+$mainfont:  Arial, Helvetica, sans-serif
 $mainwidth: calc(100vw - 40px)
-
+$compadding: 20px
 /* add this as additional css-class to  remove default margins from gutenberg blocks
 .nomargin
   margin: 0px
@@ -35,14 +36,64 @@ $mainwidth: calc(100vw - 40px)
 
 body
   margin: 0px
-  padding: 20px
+  height: 100%
+  font-family: $mainfont
 
 #maincontent
-  width: $mainwidth
+  // width: $mainwidth
   margin: 0 auto
 
 h1,h2,h3,h4,h5,h6,p
   margin: 0px
+
+p
+  font-size: 12px
+  line-height: 15.6px
+  font-style: normal
+  color: rgb(92, 92, 92)
+  font-family: $mainfont
+  margin-bottom: 5px !important
+h1
+  font-size: 26px
+  line-height: 33.8px
+  color: rgb(255, 255, 255)
+  font-family: $mainfont
+
+h2
+  font-size: 23.004px
+  color: rgb(92, 92, 92)
+  line-height: 7.6048px
+  font-family: $mainfont
+
+h3
+  font-size: 18.004px
+  color: rgb(92, 92, 92)
+  line-height: 20.6048px
+  font-family: $mainfont
+
+h4
+  font-size: 14.004px
+  line-height: 19.6056px
+  font-family: $mainfont
+  color: rgb(92, 92, 92)
+h5
+  font-size: 11px
+  line-height: 13px
+  font-family: $mainfont
+  color: rgb(92, 92, 92)
+h6
+  font-size: 9px
+  line-height: 10px
+  font-family: $mainfont
+  color: rgb(92, 92, 92)
+a
+  font-family: $mainfont
+  color: $baseblue
+  text-decoration: none !important
+
+a:hover
+   color: $baseblue
+   text-decoration: underline !important
 
 .ni-atom-logo
   width: 228px
@@ -61,6 +112,9 @@ h1,h2,h3,h4,h5,h6,p
   font-family: $mainfont
   line-height: 15px
 
+.ni-atom-h2--grey
+  color: $basegrey
+
 .ni-atom-h3
   font-size: 1.333em
   font-weight: bold
@@ -69,11 +123,12 @@ h1,h2,h3,h4,h5,h6,p
   font-family: $mainfont
 
 .ni-atom-h4
-  color: $basegrey
-  font-size: 1.167em
-  font-family: $mainfont
-  line-height: 140%
-  font-weight: bold
+    color: $basegrey
+    font-size: 1.167em
+    font-family: $mainfont
+    line-height: 140%
+    font-weight: bold
+
 .ni-atom-p
   color: $basegrey
   font-size: 15px
@@ -89,6 +144,9 @@ h1,h2,h3,h4,h5,h6,p
   font-family: $mainfont
   color: $baseblue
   text-decoration: none
+.ni-fact__marginp
+  margin-bottom: 5px !important
+  padding-bottom: 5px !important
 
 .ni-atom-a:visited
   color: none
@@ -107,6 +165,23 @@ h1,h2,h3,h4,h5,h6,p
   background: url(assets/pdf.gif) 0 0.1em no-repeat
   display: block
   padding-left: 20px
+
+.ni-sidebar-left
+  background-color: white
+  display: flex
+  justify-content: center
+
+.ni-sidebar-left__nobackground
+  background-color: #F4F4F4
+
+.ni-sidebar-leftp
+  margin: 15px 0px 15px 30px
+  
+.ni-atom-litertureback
+  background-image: url(assets/profile_icons1.png)
+  width: 207px
+  height: 47px
+  align-items: center
 
 .ni-atom-a:hover
   color: $baseblue
@@ -144,15 +219,15 @@ h1,h2,h3,h4,h5,h6,p
   color: #fff!important
 
 .ni-atom-utilitylinks
-  color: white
-  text-decoration: none
+ color: white
+ text-decoration: none
 
 .ni__body-frontpage
-  background-color: transparent
-  background: url('./assets/bghome.jpg') repeat-x center top
+   background-color: transparent
+   background: url('./assets/bghome.jpg') repeat-x center top
 
 .ni-about__banner
-  width: $mainwidth
+  // width: $mainwidth
   height: 100px
   position: relative
   margin: 0 auto
@@ -191,22 +266,69 @@ h1,h2,h3,h4,h5,h6,p
 .ni-footer__a--fb
   padding: 2px 0px 0px 23px
   background: transparent url(./assets/fb.png) no-repeat 0px -1px
-
-@media screen and ( max-width:767px  )
-.ni__navmenu-a
+.ni-atom-img
+  width: 100%
+.ni__carouselh4
+  font-size: 23px !important
+  line-height: 1.2 !important
+  margin: 0
+  padding-bottom: 0px
+  color: white !important
+.ni__carouselsubp
   font-size: 16px
-.ni__navmenu-inner
-  padding-top: 20px !important
-.ni-footer__menu
-.ni-footer__h4
-  font-size: 17px
-  line-height: 19px
-  height: 36px
+  line-height: 1.3em
+  margin-top: 5px
+  color: white
+.ni__carouselcatp
+  font-size: 13px
+  font-weight: normal
   padding-bottom: 10px
-// font-size: 12px
-// line-height: 16.8px
+  color: white
+.ni__carouselmidcapp
+  font-size: 11px
+.ni__carouselmidcapp
+  color: white 
+  font-weight: normal
+.ni__carouseltvh4
+  color: black !important
+  line-height: 1.5rem
+  font-size: 17px
+.ni-atom-iconcontains
+  bottom: 5% !important
+  position: absolute !important 
+  right: 2% !important
+  width: 3% !important
+.ni-atom-icon
+  color: white !important
+  
+@media screen and ( max-width:767px  )
+  body
+    padding: 0px
+
+  .ni__navmenu-a
+     font-size: 16px
+
+  .ni__navmenu-inner
+    padding-top: 20px !important
+
+  .ni-footer__h4
+    font-size: 17px
+    line-height: 19px
+    height: 36px
+    padding-bottom: 10px
+    // font-size: 12px
+    // line-height: 16.8px
+
+
+
+
 
 @media screen and ( min-width:768px )
+  body
+    padding: 0px $compadding
+
+  #maincontent
+    width: $mainwidth
   .ni-footer__wrapper
     justify-items: stretch
 
@@ -215,10 +337,13 @@ h1,h2,h3,h4,h5,h6,p
     line-height: 16.8px
     margin-bottom: 10px
 
+  .ni-atom-iconcontains
+    width: 5% !important
+
 @media screen and ( min-width:992px )
-  body
-    padding: 0px
-    margin: 0px
+    body
+      padding: 0px
+      margin: 0px
 
     #maincontent
       width: 980px
@@ -255,8 +380,8 @@ h1,h2,h3,h4,h5,h6,p
       font-weight: 400
       line-height: 18px
 
-.ni__logotext
-  display: none
+    .ni__logotext
+      display: none
 
 #logo
   width: 228px
@@ -350,3 +475,6 @@ h1,h2,h3,h4,h5,h6,p
   border: 1px solid #888
   width: 500px
   border-radius: 4px
+
+.ni-atom-iconcontains
+  width: 3% !important

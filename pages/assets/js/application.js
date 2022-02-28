@@ -63,6 +63,21 @@ function niCloseDropdown(){
     content.style.display = 'none' ;
 }
 
+function headerMenu(){
+    console.log(window.innerWidth)
+    let length = window.innerWidth ;
+    if(length> 767 && length < 992){
+       let linklist = document.querySelectorAll('.ni-navmenu__nav-a');
+
+         linklist.forEach( (item) =>{
+         item.addEventListener('click' , (e)=> {e.preventDefault()  } )
+        item.href='#'
+     })
+    }
+}
+
+
 headerAccordion.forEach( (el) => el.addEventListener('click', niAccordion ) )
+window.addEventListener( 'DOMContentLoaded' , headerMenu) ;
 //listElems.forEach( (el) => el.addEventListener('mouseover', niDropdown ) )
 //listElems.forEach( (el) => el.addEventListener('mouseout', niCloseDropdown ) )
