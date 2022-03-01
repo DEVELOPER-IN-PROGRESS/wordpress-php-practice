@@ -37,7 +37,7 @@ $compadding: 20px
 body
   margin: 0px
   height: 100%
-  font-family: $mainfont
+  font-family: $mainfont !important
 
 #maincontent
   // width: $mainwidth
@@ -227,13 +227,14 @@ a:hover
    background: url('./assets/bghome.jpg') repeat-x center top
 
 .ni-about__banner
-  // width: $mainwidth
+  //width: $mainwidth
   height: 100px
   position: relative
   margin: 0 auto
 
 .ni-about__banner-image
-  width: 100%
+  width: 100vw
+  object-fit: cover
   height: 100px
 
 .ni-org-footer
@@ -300,88 +301,6 @@ a:hover
   width: 3% !important
 .ni-atom-icon
   color: white !important
-
-@media screen and ( max-width:767px  )
-  body
-    padding: 0px
-
-  .ni__navmenu-a
-     font-size: 16px
-
-  .ni__navmenu-inner
-    padding-top: 20px !important
-
-  .ni-footer__h4
-    font-size: 17px
-    line-height: 19px
-    height: 36px
-    padding-bottom: 10px
-    // font-size: 12px
-    // line-height: 16.8px
-
-
-
-
-
-@media screen and ( min-width:768px )
-  body
-    padding: 0px $compadding
-
-  #maincontent
-    width: $mainwidth
-  .ni-footer__wrapper
-    justify-items: stretch
-
-  .ni-footer__h4
-    font-size: 14px
-    line-height: 16.8px
-    margin-bottom: 10px
-
-  .ni-atom-iconcontains
-    width: 5% !important
-
-@media screen and ( min-width:992px )
-    body
-      padding: 0px
-      margin: 0px
-
-    #maincontent
-      width: 980px
-      padding: 0px
-      overflow-x: clip
-
-    .ni__common-body
-      background: #cacbcd url(./assets/_body.gif) repeat-y center 50%
-      margin: 0px
-      padding: 0px
-
-    .ni-about__banner
-      width: 980px
-      height: 100px
-      position: relative
-      margin: 0 auto
-
-    .ni-footer__wrapper
-      justify-content: center
-      grid-template-columns: 228px 228px 228px 228px
-      column-gap: 20px
-      width: $mainwidth
-
-    .ni-footer__menu > p
-      margin: 0px !important
-
-    .ni-footer__h4
-      font-size: 12px
-      line-height: 16.8px
-      margin-bottom: 10px
-
-    .ni-footer__a
-      font-size: 12px
-      font-weight: 400
-      line-height: 18px
-
-    .ni__logotext
-      display: none
 
 #logo
   width: 228px
@@ -478,3 +397,84 @@ a:hover
 
 .ni-atom-iconcontains
   width: 3% !important
+
+@media screen and ( max-width:767px  )
+  body
+    padding: 0px
+
+  .ni__navmenu-a
+     font-size: 16px
+
+  .ni__navmenu-inner
+    padding-top: 20px !important
+
+  .ni-footer__h4
+    font-size: 17px
+    line-height: 19px
+    height: 36px
+    padding-bottom: 10px
+    // font-size: 12px
+    // line-height: 16.8px
+
+@media screen and ( min-width:768px )
+  body
+    padding: 0px $compadding
+
+  #maincontent
+    width: $mainwidth
+  .ni-footer__wrapper
+    justify-items: stretch
+
+  .ni-footer__h4
+    font-size: 14px
+    line-height: 16.8px
+    margin-bottom: 10px
+
+  .ni-atom-iconcontains
+    width: 5% !important
+
+  .ni-about__banner , .ni-about__banner-image
+   width: $mainwidth
+
+@media screen and ( min-width:992px )
+    body
+      padding: 0px
+      margin: 0px
+
+    #maincontent
+      width: 980px
+      padding: 0px
+      overflow-x: clip
+
+    .ni__common-body
+      background: #cacbcd url(./assets/_body.gif) repeat-y center 50%
+      margin: 0px
+      padding: 0px
+
+    .ni-about__banner
+      width: 980px
+      height: 100px
+      position: relative
+      margin: 0 auto
+
+    .ni-footer__wrapper
+      justify-content: center
+      grid-template-columns: 228px 228px 228px 228px
+      column-gap: 20px
+      width: $mainwidth
+
+    .ni-footer__menu > p
+      margin: 0px !important
+
+    .ni-footer__h4
+      font-size: 12px
+      line-height: 16.8px
+      margin-bottom: 10px
+
+    .ni-footer__a
+      font-size: 12px
+      font-weight: 400
+      line-height: 18px
+
+    .ni__logotext
+      display: none
