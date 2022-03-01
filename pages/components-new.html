@@ -12,6 +12,13 @@
     <title>Document</title>
 </head>
 <style>
+  
+  .ni-atom-carouselindicator{
+    border-radius:50% !important;
+  width:7px !important;
+  height:5px !important;
+  background-color:white !important;
+  }
     .ni-atom-newsh3 {
         font-size: 13px;
         color: white;
@@ -33,6 +40,9 @@
     }
     .ni-table-width{
         padding: 0px;
+    }
+    .ni-atom-carouselimg{
+        object-fit: cover;
     }
     @media only screen and (max-width: 767px) {
         .table{
@@ -60,21 +70,24 @@
             right: 0;
 
         }
-
+        .ni-atom-iconcontains {
+            width: 96% !important;
+        }
         .n-carouseltv__overlay {
             max-width: 410px;
             height: 300px !important;
             background: #FFFFFF !important;
             opacity: .9;
         }
-
+        
+.carousel-indicators{
+    bottom: 12px !important;
+}
         .ni-atom-button {
             font-size: 10px;
         }
 
-        .ni-atom-iconcontains {
-            width: 6% !important;
-        }
+        
 
         .ni-atom-carouselimg {
             height: 100vh;
@@ -117,16 +130,21 @@
 
         .ni-carousel-indicators {
             right: 0 !important;
-            bottom: 3px !important;
+           
             color: white !important;
             width: 6% !important;
-            left: 74% !important;
+            left: 70% !important;
 
+        }
+        .ni-atom-iconcontains {
+            width: 5% !important;
         }
     }
 
     @media only screen and (min-width: 962px) {
-
+        .ni-atom-iconcontains {
+            width: 3% !important;
+        }
         .carousel-caption {
             width: 600px !important;
             text-align: left !important;
@@ -148,7 +166,7 @@
             bottom: 3px !important;
             color: white !important;
             width: 5% !important;
-            left: 74% !important;
+            left: 73.5% !important;
 
         }
         .table{
@@ -422,7 +440,7 @@
         </header>
       </div>
 
-
+<div class="container-fluid" style="background-image: linear-gradient(#3D4A53,#AFB4B8,#D8DADC);"> 
     <div class="container-xxl p-0">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
@@ -431,7 +449,7 @@
                     <img src="assets/naunce-tv-c2.jpg" class="d-block w-100 ni-atom-carouselimg" alt="...">
                     <div class="carousel-caption">
                         <div style="padding: 15px; top: 10px !important;">
-                            <h4 class="ni-atom-h4 ni__carouselh4"> Value. Delivered1.</h4>
+                            <h4 class="ni-atom-h4 ni__carouselh4"> Value. Delivered.</h4>
                             <div class="row">
                                 <div class="col-6">
                                     <p class="n-atom-p ni__carouselsubp"><b>Nuance Mid Cap Value <br />
@@ -562,7 +580,7 @@
                 </div>
 
             </div>
-            <div class="d-none d-lg-block">
+            <div >
                 <div class="carousel-indicators  ni-carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0"
                         class="active ni-atom-carouselindicator" aria-current="true" aria-label="Slide 1"></button>
@@ -576,7 +594,7 @@
                         aria-label="Slide 5" class="ni-atom-carouselindicator"></button>
                 </div>
             </div>
-            <div class="ni-atom-iconcontains d-none d-md-block">
+            <div class="ni-atom-iconcontains">
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
                     data-bs-slide="prev">
                     <img src="assets/rs-minimal-white-left.png">
@@ -586,22 +604,11 @@
                     <img src="assets/rs-minimal-white-right.png">
                 </button>
             </div>
-            <div class="d-block d-md-none">
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
+           
         </div>
 
     </div>
-
+</div>
     <div class="container my-5">
         <div class="row">
             <div class="col col-lg-3 col-md-3 col-sm-12 ni-sidebar-left">
