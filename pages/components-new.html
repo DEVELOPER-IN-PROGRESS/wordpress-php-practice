@@ -12,16 +12,16 @@
     <title>Document</title>
 </head>
 <style>
-  .header-wrapper{
+  /* .header-wrapper{
       position: absolute !important;
-  }
+  } */
   .ni-atom-carouselindicator{
     border-radius:50% !important;
   width:7px !important;
   height:5px !important;
   background-color:white !important;
   }
- 
+
     .ni-atom-newsh3 {
         font-size: 13px;
         color: white;
@@ -89,7 +89,7 @@
             background: #FFFFFF !important;
             opacity: .9;
         }
-        
+
 .carousel-indicators{
     bottom: 12px !important;
 }
@@ -97,7 +97,7 @@
             font-size: 10px;
         }
 
-        
+
 
         .ni-atom-carouselimg {
             height: 100vh;
@@ -154,7 +154,7 @@ gap: 10px;
 
         .ni-carousel-indicators {
             right: 0 !important;
-           
+
             color: white !important;
             width: 6% !important;
             left: 70% !important;
@@ -253,6 +253,55 @@ gap: 20px;
           </li>
         </ul>
       </div>
+    <div class="header-wrapper">
+        <header id="site-header" class="ni__header" role="banner">
+          <div class="ni-header__navmenu1">
+            <a href="/" id="log"   title="nuance logo">
+              <img
+                width="228"
+                height="50"
+                class=" "
+                src="./assets/logo.jpg"
+                alt="naunce logo"
+              />
+            </a>
+
+            <div
+              class="hamburger"
+              id="hamburgerMenu"
+              onclick="hamBurger(this);"
+            >
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
+
+          <div class="d-md-block">
+            <ul class="ni__navmenu-inner list-style-none text-center">
+              <li class="ni__navmenu-inner-li">
+                <a class="ni-atom-a ni__navmenu-a" href="/">Home</a>
+              </li>
+              <li class="ni__navmenu-inner-li">
+                <a class="ni-atom-a ni__navmenu-a" href="/about">About us</a>
+              </li>
+              <li class="ni__navmenu-inner-li">
+                <a class="ni-atom-a ni__navmenu-a" href="/contact"
+                  >Contact us</a
+                >
+              </li>
+              <li class="ni__navmenu-inner-li">
+                <a class="ni-atom-a ni__navmenu-a" href="/news">News</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="nav_wrapper d-md-block ni-header__sidebar" id="navmenu2">
+            <div class="hamburger change d-md-none" style="padding:20px 0px 0px 20px;" onclick="closeSideBar();" >
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
 
       <div class="nav_wrapper d-md-block ni-header__sidebar" id="navmenu2">
         <div class="hamburger change d-md-none" style="padding:20px 0px 0px 20px;" onclick="closeSideBar();" >
@@ -473,8 +522,8 @@ gap: 20px;
 </div> -->
 <!-- carousel -->
 
-<div class="container-fluid px-0" style="background-image: linear-gradient(#3D4A53,#AFB4B8,#D8DADC);"> 
-    <div class="container p-0">
+<div class="container-fluid" style="background-image: linear-gradient(#3D4A53,#AFB4B8,#D8DADC);">
+    <div class="container-xxl p-0">
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
             <div class="carousel-inner">
@@ -637,7 +686,7 @@ gap: 20px;
                     <img src="assets/rs-minimal-white-right.png">
                 </button>
             </div>
-           
+
         </div>
 
     </div>
@@ -646,30 +695,30 @@ gap: 20px;
 <!-- bg card -->
 <div class="container-fluid py-3" style="background-image: linear-gradient(to top ,#7D868C,#686F73,#515859,#515859,#515859); background-color: rgb(99,112,122) !important;" >
     <div class="ni-atom-news">
-        <h3 class="ni-atom-newsh3">News&Updates</h3> 
-    </div> 
-    
+        <h3 class="ni-atom-newsh3">News&Updates</h3>
+    </div>
+
 
     <div class="ni-gridwrapper" >
             <div>
                 <img src="assets/nuance-promo-c1.png" alt="" class="ni-atom-img">
             </div>
-            
-        
+
+
         <div>
             <img src="/assets/nuance-ownership-promo-c2.jpg" alt=""  class="ni-atom-img">
         </div>
-           
-       
+
+
         <div>
             <img src="assets/nounce-promo-c3.png" alt="" class="ni-atom-img">
         </div>
-            
-       
+
+
     </div>
 </div>
  <!-- footer -->
- 
+
 <footer class="ni-org-footer ni-org-footer__fullwidth">
     <div class="ni-footer__wrapper">
 
@@ -723,9 +772,9 @@ gap: 20px;
             <a href="../tv" class="ni-atom-a  ni-atom-footerlinks ni-footer__a ni-footer__a--fb">On Facebook</a>
           </p>
         </div>
-       
+
     </div>
-    
+
 </footer>
     <!-- <div class="container my-5">
         <div class="row">
@@ -845,6 +894,23 @@ gap: 20px;
             </div>
         </div>
     </div> -->
+    </div>
+
+    <div
+    style="background-image: url(assets/profile_bg11.png);background-position: 694px -150px; height: 40px;margin-top: 25px;">
+    <ul class="d-flex">
+        <li class="list-unstyled px-3 py-2" style="font-size: 14px; color: #333333;">Summary</li>
+        <li class="list-unstyled px-3"> <img src="assets/profile_icons111.png" /></li>
+        <li class="list-unstyled px-3 py-2" style="font-size: 14px; color: #333333;">Performance</li>
+        <li class="list-unstyled px-3"> <img src="assets/profile_icons111.png" /></li>
+        <li class="list-unstyled px-3 py-2" style="font-size: 14px; color: #333333;">Manager Commentary
+        </li>
+        <li class="list-unstyled px-3 "> <img src="assets/profile_icons111.png" /></li>
+        <li class="list-unstyled px-3 py-2" style="font-size: 14px; color: #333333;">Risk Factors</li>
+
+    </ul>
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
