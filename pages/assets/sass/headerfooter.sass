@@ -110,8 +110,6 @@ $liwidth : calc( ( 100vw - 20px ) / 6 )
 .ni-navmenu__nav-li
     position: relative
 
-
-
 @media screen and (max-width: 767px)
     .ni-navmenu__nav
        padding: 0px
@@ -175,7 +173,6 @@ $liwidth : calc( ( 100vw - 20px ) / 6 )
     .ni-header__accordion-panel
       min-width: 380px
       height: 140px
-      display: none
       opacity: 0
       position: absolute
       z-index: 1
@@ -183,10 +180,11 @@ $liwidth : calc( ( 100vw - 20px ) / 6 )
       padding: 15px 18px
       left: 0px
 
-    // .ni-header__accordion-panel
-    //    &:last-child
-    //      min-width: 119px
-    //      padding: 15px 0px
+    .ni-header__accordion-panel
+      &:nth-child(5)
+        opacity: 1
+        background-color: red
+
 
     .ni-navmenu__nav-li
       &:hover   .ni-header__accordion-panel

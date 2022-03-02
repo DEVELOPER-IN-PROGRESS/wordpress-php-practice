@@ -17,10 +17,22 @@
 
 get_header();
 
+//$banner = get_field('hero_banner'); $size='full' ;
 
 ?>
 
-<main id="site-content" role="main" class="ni__main-content">
+<main id="maincontent" role="main" >
+<?php
+ $image = get_field('hero__banner');
+  ?>
+
+        <div class="ni-about__banner">
+            <img src="<?php echo $image['url']; ?>" class="ni-about__banner-image" alt="<?php echo $image['alt']; ?>" width="980" height="100"/>
+             <h1 class="ni-atom-h1 ni-imgbanner__h1">
+               <?php the_field('h1_title') ?></h1>
+              <h2 style="color:transparent;"></h2>
+
+        </div>
 
 <?php
     if(have_posts()):
@@ -32,7 +44,13 @@ get_header();
     <?php
 	endif
 	?>
- 
+<?php
+
+  //echo  wp_get_attachment_image($image);
+
+// var_dump($image);
+ ?>
+
 </main>
 <?php
 get_footer();

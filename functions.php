@@ -1,9 +1,8 @@
 <?php
 
 function naunce_theme_styles() {
-
+    wp_enqueue_style('bootstrap' , get_template_directory_uri().'/bootstrap.css');
     wp_enqueue_style('style' ,get_stylesheet_directory_uri().'/style.css');
-    wp_enqueue_style('bootstraplite' , get_template_directory_uri().'/bootstraplite.css');
 
 }
 add_action('wp_enqueue_scripts' , 'naunce_theme_styles');

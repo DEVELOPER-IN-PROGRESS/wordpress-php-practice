@@ -1,13 +1,13 @@
-/*  https://www.nuanceinvestments.com/news  news page blocks
+
+    /*  https://www.nuanceinvestments.com/news  news page blocks
 
 .ni-news__contentgrid
     display: grid
-    grid-template-columns:  175px  auto
+    grid-template-columns: 175px auto
     column-gap: 20px
 
 .ni-news__pdfblock
     border-top: 1px solid silver
-
 
 .ni-news-molc__p1
     margin-bottom: 7px
@@ -24,3 +24,20 @@
     line-height: 18px
     padding-bottom: 6px
 
+.ni-news__img
+    width: 120px
+    height: 129px
+
+@media screen and (min-width: 768px)
+    .ni-header__accordion-panel
+        display: flex !important
+        text-align: left
+
+    .ni-header__accordion-panel
+        &:last-child
+            min-width: 390px
+    .ni-header__accordion-panel
+        padding-left: 0px
+    .ni-header__accordion-list
+        min-width: 150px
+        width: fit-content
