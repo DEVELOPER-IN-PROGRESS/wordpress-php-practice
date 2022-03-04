@@ -97,6 +97,7 @@ a:hover
 
 .ni-atom-logo
   width: 228px
+  object-fit: cover
   height: 50px
 
 .ni-atom-h1
@@ -311,8 +312,6 @@ a:hover
   top: -1px
 
 .ni__main-content
-  width: 1000px
-  border: 1px solid black
   margin: 0 auto
 
 .ni-imgbanner__h1
@@ -466,10 +465,10 @@ a:hover
       padding: 0px
       margin: 0px
 
-    #maincontent
+    #maincontent , .ni__main-content
       width: 980px
       padding: 0px
-      overflow-x: clip
+
 
     .ni__common-body
       background: #cacbcd url(./assets/_body.gif) repeat-y center 50%
@@ -503,3 +502,6 @@ a:hover
 
     .ni__logotext
       display: none
+
+    .ni-about__banner-image
+      width: 980px

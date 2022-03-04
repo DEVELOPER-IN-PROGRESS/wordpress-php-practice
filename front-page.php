@@ -34,7 +34,17 @@ get_header();
 
         </div>
 
+      <div style="margin:50px"></div>
+
 <?php
+
+
+?>
+
+
+
+<?php
+
     if(have_posts()):
  		while(have_posts()):the_post(); ?>
     <?php the_content() ?>

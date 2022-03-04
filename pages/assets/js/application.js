@@ -39,16 +39,17 @@ function closePanels(){
 
 function niAccordion(){
        closePanels();
-    let  panel = this.nextElementSibling;
-    panel.style.display = 'block';
-     if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-      panel.style.display = 'none';
+   // let  panel = this.nextElementSibling;
+   // console.log(panel);
+        // panel.style.display = 'block';
+        //  if (panel.style.maxHeight) {
+        //   panel.style.maxHeight = null;
+        //   panel.style.display = 'none';
 
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-      panel.style.display = 'block' ;
-    }
+        // } else {
+        //   panel.style.maxHeight = panel.scrollHeight + "px";
+        //   panel.style.display = 'block' ;
+        // }
 }
 
 function niDropdown(){

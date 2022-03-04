@@ -147,6 +147,10 @@ $liwidth : calc( ( 100vw - 20px ) / 6 )
     .ni-header__accordion-list > li
       padding-left: 10px
 
+
+    .ni-header__accordion:focus + .ni-header__accordion-panel
+      display: block
+
 @media screen and ( min-width: 768px)
     .hamburger
         display: none
@@ -164,6 +168,10 @@ $liwidth : calc( ( 100vw - 20px ) / 6 )
       padding: 0px
       align-items: center
       height: 36px
+
+    .ni-navmenu__nav > li
+       &:last-child
+          display: none
 
     .ni-navmenu__nav-li
        display: flex
