@@ -77,8 +77,7 @@
               <?php
               $menu = wp_get_nav_menu_items('Navigation Menu');
 
-                $subindex = 0 ;
-                $thinline = get_template_directory_uri().'/assets/thin.png' ;
+              $thinline = get_template_directory_uri().'/assets/thin.png' ;
                 $i = 0 ;
 
                 for ($i=0 ; $i<28; $i++) {
@@ -106,7 +105,7 @@
                           \n<ul class=\"ni-header__accordion-list\">";
                           while($menu[$i]->menu_item_parent == $menuid){
                             echo "<li>
-                                  <a target=\"__self\" class=\"ni-atom-a ni-header__accordion-link\"".
+                                  <a target=\"__blank\" class=\"ni-atom-a ni-header__accordion-link\"".
                                 "href=\"".$menu[$i]->url."\">".$menu[$i]->post_title .
                               "</a></li>";
                               ++$i;
