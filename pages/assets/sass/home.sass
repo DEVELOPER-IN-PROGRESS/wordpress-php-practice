@@ -1,13 +1,36 @@
 /* here goes the styles for home page  https://www.nuanceinvestments.com/
+.ni-home__gridwrapper
+    display: grid
+    grid-template-columns: repeat(1, 1fr)
+    padding: 10px
+    gap: 20px
+.ni-home__promo-img
+    object-fit: cover
+    height: 100px
 
+.ni-home__promo-h3
+    color: #fff
+    position: absolute
+    top: 20px
+    left: 20px
 
-
+.ni-home__promo-p
+    color: $baseblue
+    position: absolute
+    top: 50px
+    left: 20px
 
 
 @media screen and ( min-width:768px  )
-
- 
+    .ni-home__gridwrapper
+        grid-template-columns: repeat(3, 1fr)
+        padding: 0px
+        gap: 10px
 
 @media screen and (min-width: 992px)
+    .ni-home__gridwrapper
+        grid-template-columns: auto auto auto
+        gap: 20px
 
-
+    .ni-home__promo-img
+        height: 91px
