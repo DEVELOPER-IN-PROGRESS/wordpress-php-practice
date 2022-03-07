@@ -91,11 +91,6 @@ a
   color: $baseblue
   text-decoration: none !important
 
-// remove uneven bootstrap margins from v5
-.row--nomgn
-  margin-left: 0px
-  margin-right: 0px
-
 a:hover
    color: $baseblue
    text-decoration: underline !important
@@ -103,7 +98,7 @@ a:hover
 .ni-atom-logo
   width: 228px
   height: 50px
-
+  object-fit: cover
 .ni-atom-h1
   color: #fff
   font-size: 26px
@@ -235,7 +230,7 @@ a:hover
   //width: $mainwidth
   height: 100px
   position: relative
-  margin: 0 auto
+  // margin: 0 auto
 
 .ni-about__banner-image
   width: 100vw
@@ -352,6 +347,9 @@ a:hover
 .ni-navmenu2__li
   width: 130px
 
+.space-between
+    justify-content: space-between
+
 .ni-navmenu__nav-a
   font-size: 14px
   font-weight: 600
@@ -365,7 +363,7 @@ a:hover
 .ni-navmenu__nav-a:hover
   color: #f9f9f9 !important
   opacity: 0.9
-  text-decoration: none
+  text-decoration: none !important
 
 .sidecard-wrapper
   position: relative
@@ -403,8 +401,8 @@ a:hover
 .ni-atom-iconcontains
   width: 3% !important
 
-.ni-organism-keyfund 
-    margin: 50px 0px 50px 50px
+.ni-organism-keyfund
+    margin: 50px
     background-color: #3f6b96
     padding: 5px 0px 2px 0px
 .ni-atom__keyfund
@@ -413,17 +411,17 @@ a:hover
   text-align: center
 
 .ni-organism-table
-  table 
+  table
     border: 1px solid #BBBBBB
     border-top: none !important
   td,
-  th 
+  th
     text-align: left
     padding: 8px
-  td 
+  td
     border-bottom: 1px solid #BBBBBB
     border-top: none !important
-  tr:nth-child(even) 
+  tr:nth-child(even)
     background-color: rgb(245, 245, 245) !important
   
 ni-molc-desc__p
@@ -445,7 +443,7 @@ ni-molc-desc__p
     padding-bottom: 10px
     // font-size: 12px
     // line-height: 16.8px
-
+  
 @media screen and ( min-width:768px )
   body
     padding: 0px $compadding
@@ -464,8 +462,9 @@ ni-molc-desc__p
     width: 5% !important
 
   .ni-about__banner , .ni-about__banner-image
-   width: $mainwidth
+    width: calc( 100vw - 68px)
 
+ 
 @media screen and ( min-width:992px )
     body
       padding: 0px

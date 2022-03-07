@@ -9,145 +9,270 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     </head>
-<!-- <style>
-    ul {
-        padding-left: 0px !important;
-    }
 
-    .ni-atom__careerlist{
-            margin: 10px 0px;
-            color: rgb(92, 92, 92);
-            font-size: 14px;
-        }
-        .ni-atom__carreerh3{
-            font-size: 18px;
-            color: rgb(92, 92, 92);
-        }
-    @media only screen and (max-width: 600px) {
-        .ni-about__sidebar {
-            width: 100% !important;
-        }
-
-        .container {
-            width: 100% !important;
-        }
-
-        .container-fluid {
-            width: 100% !important;
-        }
-    }
-
-    @media only screen and (min-width: 600px) {}
-
-    @media only screen and (min-width: 992px) {
-        .container {
-            width: 1050px !important;
-            background-color: white;
-        }
-
-        .container-fluid {
-            background-color: #cacbcd !important;
-
-        }
-
-        .ni-about__sidebar {
-            width: 77% !important;
-            margin: auto;
-        }
-
-        .ni-personr__head {
-            padding-right: 50px !important;
-        }
-
-        .ni-row__padd {
-            padding: 0px 30px !important;
-        }
-
-        .ni-org-footer-container {
-            padding: 50px !important;
-        }
-
-    }
-</style> -->
 
 <body>
-    <div class="container-fluid" style="align-items: center;padding: 0px;">
+    <div class="container-fluid ni-container-background ni__common-body" style="align-items: center;padding: 0px;">
 
-        <!-- <div class="container">
-            <div class="header-wrapper" style="padding: 30px 0px;">
-                <header id="site-header" class="ni__header" role="banner">
-
-                    <a href="/" id="log" role="logo" title="nuance logo">
-                        <img width="228" height="50" class="ni__navmenu-img" src="./assets/logo.jpg"
-                            alt="naunce logo" />
-                    </a>
-
-
-
-                    <ul class="ni__navmenu-inner">
-                        <li class="ni__navmenu-inner-li"><a class="ni-atom-a ni__navmenu-a" href="/">Home</a></li>
-                        <li class="ni__navmenu-inner-li"><a class="ni-atom-a ni__navmenu-a" href="/about">About us</a>
-                        </li>
-                        <li class="ni__navmenu-inner-li"><a class="ni-atom-a ni__navmenu-a" href="/contact">Contact
-                                us</a></li>
-                        <li class="ni__navmenu-inner-li"><a class="ni-atom-a ni__navmenu-a" href="/news">News</a></li>
-                    </ul>
-
-                    <div class="nav_wrapper">
-                        <nav class="ni-navmenu__nav d-flex text-center">
-
-                            <a href="/about" class="ni-atom-a ni-navmenu__nav-a">
-                                <p style="width: 130px;"> About Us </p>
+   
+        <div class="header-wrapper header-wrapper_padd">
+            <header id="site-header" class="ni__header" role="banner">
+              <div class="ni-header__navmenu1">
+                <a href="/" id="log"  title="nuance logo">
+                  <img width="228"  height="50" class=" "
+                    src="./assets/logo.jpg" alt="naunce logo" />
+                </a>
+      
+                <div class="hamburger" id="hamburgerMenu" onclick="hamBurger(this);"  >
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+              </div>
+      
+              <div class="d-md-block">
+                <ul class="ni__navmenu-inner list-style-none text-center">
+                  <li class="ni__navmenu-inner-li">
+                    <a class="ni-atom-a ni__navmenu-a" href="/">Home</a>
+                  </li>
+                  <li class="ni__navmenu-inner-li">
+                    <a class="ni-atom-a ni__navmenu-a" href="/about">About us</a>
+                  </li>
+                  <li class="ni__navmenu-inner-li">
+                    <a class="ni-atom-a ni__navmenu-a" href="/contact">Contact us</a>
+                  </li>
+                  <li class="ni__navmenu-inner-li">
+                    <a class="ni-atom-a ni__navmenu-a" href="/news">News</a>
+                  </li>
+                </ul>
+              </div>
+      
+              <div class="nav_wrapper d-md-block ni-header__sidebar" id="navmenu2">
+                <div class="hamburger change d-md-none" style="padding:20px 0px 0px 20px;" onclick="closeSideBar();" >
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+      
+                <nav class="text-center">
+                  <ul class="ni-navmenu__nav">
+                    <li  class="ni-navmenu__nav-li">
+                      <a
+                        href="/about"
+                        class="d-none d-md-block ni-atom-a ni-navmenu__nav-a "
+                      >
+                        <p >About Us</p>
+                      </a>
+                      <button class="ni-header__accordion d-md-none">
+                        <a href="/tv" class="ni-atom-a"> About Us</a>
+                      </button>
+                      <div class="ni-header__accordion-panel">
+      
+                          <ul class="ni-header__accordion-list">
+                            <li><a href="../about" class="ni-atom-a ni-header__accordion-link">Overview</a></li>
+                            <li><a href="../philosophy" class="ni-atom-a ni-header__accordion-link">Our Philosophy</a></li>
+                            <li><a href="../team" class="ni-atom-a ni-header__accordion-link">Our Team</a></li>
+                            <li><a href="../contact" class="ni-atom-a ni-header__accordion-link">Contact Us</a></li>
+                           </ul>
+      
+                          <div class="ni-header__accordion-p">
+                            <p class="ni-atom-p">We provide investment management services focused specifically on value style investments.</p>
+                          </div>
+                      </div>
+                    </li>
+      
+                    <li>
+                      <img
+                        src="assets/thin.png"
+                        width="2"
+                        alt="narrow"
+                        class="d-none d-md-block"
+                      />
+                    </li>
+      
+                    <li  class="ni-navmenu__nav-li">
+                      <a
+                        href="/funds"
+                        class="d-none d-md-block ni-atom-a ni-navmenu__nav-a  "
+                      >
+                        <p >Mutual Funds</p>
+                      </a>
+                      <button class="ni-header__accordion d-md-none ">
+                        Mutual Funds
+                      </button>
+      
+                      <div class="ni-header__accordion-panel text-left">
+      
+                        <ul class="ni-header__accordion-list">
+                          <li><a href="../funds" class="ni-atom-a ni-header__accordion-link">Overview</a></li>
+                          <li>
+                            <a href="../concentrated-value-fund" class="ni-atom-a ni-header__accordion-link">Nuance Concentrated Value Fund
                             </a>
-
-                            <img src="assets/thin.png" width="2" alt="narrow" />
-
-                            <a href="/funds" class="ni-atom-a ni-navmenu__nav-a">
-                                <p style="width: 130px;"> Mutual Funds </p>
+                          </li>
+                          <li>
+                            <a href="../concentrated-value-long-short-fund" class="ni-atom-a ni-header__accordion-link">Nuance Concentrated Value <br>
+                              Long-Short Fund
                             </a>
-
-                            <img src="assets/thin.png" width="2" alt="narrow" />
-
-                            <a href="/private-accounts" class="ni-atom-a ni-navmenu__nav-a">
-                                <p style="width: 130px;"> Private Accounts </p>
+                          </li>
+                          <li>
+                            <a href="../mid-cap-value-fund" class="ni-atom-a ni-header__accordion-link">Nuance Mid Cap Value Fund
                             </a>
-
-                            <img src="assets/thin.png" width="2" alt="narrow" />
-
-                            <a href="/tv" class="ni-atom-a ni-navmenu__nav-a">
-                                <p style="width: 130px;"> NuanceTv </p>
+                          </li>
+                          <li>
+                            <a href="../invest-mutual-funds" class="ni-atom-a ni-header__accordion-link">How to Invest
                             </a>
-
-                            <img src="assets/thin.png" width="2" alt="narrow" />
-
-                            <a href="/knowledge-&-news" class="ni-atom-a ni-navmenu__nav-a">
-                                <p style="width: 130px;"> News & Awards </p>
+                          </li>
+                          <li>
+                            <a href="../mutual-fund-news" class="ni-atom-a ni-header__accordion-link">Mutual Fund News
                             </a>
-                            <img src="assets/thin.png" width="2" alt="narrow" />
-
-                            <a href="/invest" class="ni-atom-a ni-navmenu__nav-a">
-                                <p style="width: 130px;"> How to invest</p>
-                            </a>
-
-                        </nav>
+                          </li>
+                         </ul>
+      
+                        <div class="ni-header__accordion-p">
+                          <p class="ni-atom-p">We provide investment management services focused specifically on value style investments.</p>
+                        </div>
+                      </div>
+                    </li>
+      
+                    <li>
+                      <img
+                        src="assets/thin.png"
+                        width="2"
+                        alt="narrow"
+                        class="d-none d-md-block"
+                      />
+                    </li>
+      
+                    <li class="ni-navmenu__nav-li">
+                      <a
+                        href="/private-accounts"
+                        class="d-none d-md-block ni-atom-a ni-navmenu__nav-a  "
+                      >
+                        <p >Private Accounts</p>
+                      </a>
+                      <button class="ni-header__accordion d-md-none ">
+                        Private Accounts
+                      </button>
+                      <div class="ni-header__accordion-panel text-left">
+      
+                        <ul class="ni-header__accordion-list">
+                          <li><a href="../private-accounts" class="ni-atom-a ni-header__accordion-link">Overview</a></li>
+                          <li><a href="../mid-cap-value" class="ni-atom-a ni-header__accordion-link">Nuance Mid Cap Value</a></li>
+                          <li><a href="../concentrated-value" class="ni-atom-a ni-header__accordion-link"> Nuance Concentrated Value</a></li>
+      
+                         </ul>
+      
+                          <div class="ni-header__accordion-p">
+                            <p class="ni-atom-p">Explore the latest information on our Private Account products. </p>
+                          </div>
+                      </div>
+                    </li>
+      
+                    <li>
+                      <img
+                        src="assets/thin.png"
+                        width="2"
+                        alt="narrow"
+                        class="d-none d-md-block"
+                      />
+                    </li>
+      
+                    <li class="ni-navmenu__nav-li">
+                      <a
+                        href="/tv"
+                        class="d-none d-md-block ni-atom-a ni-navmenu__nav-a  "
+                      >
+                        <p >NuanceTv</p>
+                      </a>
+                      <button class="ni-header__accordion d-md-none ">
+                        NuanceTv
+                      </button>
+                    </li>
+      
+                    <li>
+                      <img
+                        src="assets/thin.png"
+                        width="2"
+                        alt="narrow"
+                        class="d-none d-md-block"
+                      />
+                    </li>
+      
+                    <li class="ni-navmenu__nav-li">
+                      <a
+                        href="/knowledge-&-news"
+                        class="d-none d-md-block ni-atom-a ni-navmenu__nav-a  "
+                      >
+                        <p >News & Awards</p>
+                      </a>
+                      <button class="ni-header__accordion d-md-none ">
+                        News & Awards
+                      </button>
+                      <div class="ni-header__accordion-panel text-left">
+      
+                        <ul class="ni-header__accordion-list">
+                          <li><a href="../knowledge-&-news" class="ni-atom-a ni-header__accordion-link">Overview</a></li>
+                          <li><a href="../commentary" class="ni-atom-a ni-header__accordion-link">Manager Commentary</a></li>
+                          <li><a href="../knowledge" class="ni-atom-a ni-header__accordion-link">Knowledge </a></li>
+                           <li><a href="../news" class="ni-atom-a ni-header__accordion-link">News </a></li>
+                           <li><a href="../awards" class="ni-atom-a ni-header__accordion-link">Awards </a></li>
+                           <li><a href="../articles" class="ni-atom-a ni-header__accordion-link">Articles of Interest </a></li>
+      
+                         </ul>
+      
+                          <div class="ni-header__accordion-p">
+                            <p class="ni-atom-p">We are defined by our philosophy as we invest and serve clients globally.  </p>
+                          </div>
+                      </div>
+                    </li>
+      
+                    <li>
+                      <img
+                        src="assets/thin.png"
+                        width="2"
+                        alt="narrow"
+                        class="d-none d-md-block"
+                      />
+                    </li>
+      
+                    <li class="ni-navmenu__nav-li">
+                      <a
+                        href="/invest"
+                        class="d-none d-md-block ni-atom-a ni-navmenu__nav-a  "
+                      >
+                        <p >How to invest</p>
+                      </a>
+                      <button class="ni-header__accordion d-md-none">
+                        How to invest
+                      </button>
+                      <div class="ni-header__accordion-panel text-left">
+      
+                        <ul class="ni-header__accordion-list">
+                          <li><a href="../invest" class="ni-atom-a ni-header__accordion-link">Overview</a></li>
+                          <li><a href="../forms" class="ni-atom-a ni-header__accordion-link">Forms and Applications</a></li>
+                          <li><a href="../contact" class="ni-atom-a ni-header__accordion-link">Contact Us</a></li>
+                         </ul>
+      
+                        <div class="ni-header__accordion-p">
+                          <p class="ni-atom-p">We are committed to offering world class value style investment products. </p>
+                        </div>
                     </div>
-
-                </header>
-                <section style="height: 127px;"></section> -->
-        <!-- <div class="ni-about__banner">
-          <img src="https://www.nuanceinvestments.com/uploads/images/billboard-bg-980x100.jpg" width="980" height="100">
-          <h1 class="ni-atom-h1 ni-imgbanner__h1">Manager Commentary</h1>
-        </div> -->
-        <!-- </div>
-     </div> -->
-        <div class="container">
-            <div class="row ni-row__padd" style="">
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </header>
+          </div>
+   
+        <div class="container pt-4 ni-container-person ">
+           
+            <div class="row ni-row__padd">
                 <div class="col-lg-8 col-sm-12 order-2 order-lg-1">
                     <div class="ni-person__head">
                         <h1 class="ni-person__headh1" style="color: #5c5c5c; font-size: 22px; font-weight: 400;padding: 10px 0px;"> Scott Moore,
                             CFA
                         </h1>
-                        <img src="/assets/scott-moore-banner.jpg" alt="" srcset="" width="100% !important">
+                        <img src="assets/scott-moore-banner.jpg" alt="" srcset="" width="100% !important">
                         <p
                             style="padding:20px 0px;font-size:14px !important;line-height: 1.3em; color: rgb(92, 92, 92) !important;font-weight: 400 !important; font-family: Arial, Helvetica, san;">
                             Scott Moore is the President and Co-Chief Investment Officer of Nuance and is a co-owner of
@@ -182,7 +307,7 @@
                             and Chartered Financial Analyst
                             are registered trademarks owned by CFA Institute. </p>
                         <div>
-                            <h3 class="ni-atom__carreerh3">Career Highlights</h3>
+                            <h3 class="ni-atom__carreerh3 pt-3"><b>Career Highlights</b></h3>
                             <ul >
                                 <li class="list-unstyled ni-atom__careerlist">Co-owner and founder of Nuance Investments, LLC</li>
                                 <li class="list-unstyled ni-atom__careerlist">Lead Portfolio Manager of the Nuance Concentrated Value Separate Account product
@@ -235,95 +360,91 @@
 
                 </div>
             </div>
+
+
+            <footer class="ni-org-footer ni-org-footer__fullwidth">
+                <div class="ni-footer__wrapper ni-footer-wrapper__area">
+            
+                    <div class="ni-footer__menu">
+                        <h4 class="ni-atom-h4  ni-footer__h4">Investment Solutions</h4>
+                        <p>
+                            <a id="fundslink2" href="../funds" class="ni-atom-a ni-atom-footerlinks ni-footer__a">Mutual Funds</a>
+                        </p>
+                        <p>
+                            <a href="../private-accounts" class="ni-atom-a ni-atom-footerlinks ni-footer__a">Private Accounts</a>
+                        </p>
+            
+                    </div>
+            
+                    <div class="ni-footer__menu">
+                        <h4 class="ni-atom-h4  ni-footer__h4">Investor Resources</h4>
+                        <p>
+                            <a id="fundslink2" href="../invest" class="ni-atom-a ni-atom-footerlinks ni-footer__a">How to Invest</a>
+                        </p>
+                        <p>
+                            <a href="../tv" class="ni-atom-a ni-atom-footerlinks ni-footer__a">NuanceTv</a>
+                        </p>
+                    </div>
+            
+                    <div class="ni-footer__menu">
+                        <h4 class="ni-atom-h4  ni-footer__h4">About Nuance Investments</h4>
+                        <p>
+                            <a id="fundslink2" href="../about" class="ni-atom-a ni-atom-footerlinks ni-footer__a">About Us</a>
+                        </p>
+                        <p>
+                            <a href="../team" class="ni-atom-a ni-atom-footerlinks ni-footer__a">Investment Team</a>
+                        </p>
+                    </div>
+            
+                    <div class="ni-footer__menu">
+                        <h4 class="ni-atom-h4  ni-footer__h4">Connect with Us</h4>
+                        <p>
+                            <a id="fundslink2" href="../invest" class="ni-atom-a ni-atom-footerlinks ni-footer__a ni-footer__a--lin
+                              ">On LinkedIn</a>
+                        </p>
+                        <p>
+                            <a id="fundslink2" href="../invest" class="ni-atom-a ni-atom-footerlinks ni-footer__a ni-footer__a--tw
+                              ">On Twitter</a>
+                        </p>
+                        <p>
+                            <a href="../tv" class="ni-atom-a  ni-atom-footerlinks ni-footer__a ni-footer__a--fb">On Facebook</a>
+                        </p>
+                    </div>
+            
+                </div>
+                <div class="container ni-footer__wrapperbottom">
+                    <div class="row pt-3">
+                        <ul class="p-0   ni-footer-listitems">
+                          <li class=" pe-1 list-unstyled n-atom-footerlistitems"><a href="../legal"
+                              class="ni-atom-a ni-atom-footerlinks">©
+                              Nuance Investments LLC, All rights reserved.</a></li>
+                          <li  class="px-1 list-unstyled"><a href="/uploads/PrivacyPolicy.pdf"
+                              target="_blank" class="ps-lg-2 ni-atom-a ni-atom-footerlinks ni-atom-borderleft">Privacy statement</a></li>
+                          <li  class="px-1 list-unstyled "><a href="../disclosures"
+                              class="ps-lg-2 ni-atom-a ni-atom-footerlinks ni-atom-borderleft">Disclosures</a></li>
+                          <li  class="px-1 list-unstyled "><a href="/uploads/ADVPartII.pdf"
+                              target="_blank" class="ps-lg-2 ni-atom-a ni-atom-footerlinks ni-atom-borderleft">Disclosure Brochure</a></li>
+                          <li  class="px-1 list-unstyled ml-3"><a
+                              href="/pdf/Nuance Form CRS (Final).pdf" target="_blank" class="ps-lg-2 ni-atom-a ni-atom-footerlinks ni-atom-borderleft">Form CRS</a>
+                          </li>
+                          <li  class="px-1 list-unstyled "><a
+                              href="/pdf/Nuance Form CRS (Final).pdf" target="_blank" class="ps-lg-2 ni-atom-a ni-atom-footerlinks  ni-atom-borderleft">Contact
+                              us</a></li>
+                        </ul>
+                    
+                        <p class="pt-4  px-0 ni-atom-footerdescription">Nuance Investments, LLC • 4900 Main Street, Suite 220, Kansas
+                          City, MO 64112 </p>
+                      </div>
+                      </div>
+            </footer>
         </div>
 
 
-        <footer class="container ni-org-footer-container">
-            <div class="row">
-                <div class="col-3">
+        
 
-                    <ul class="ni-molc-footer-list">
-                        <h4 class="ni-atom-h2 ni__greycard-h2">Investment Solutions</h4>
-                        <li class="list-unstyled ni-atom-footerlinks"><a id="fundslink2" href="../funds"
-                                class="ni-atom-a ni-atom-footerlinks">Mutual Funds</a></li>
-                        <li class="list-unstyled ni-atom-footerlinks"><a href="../private-accounts"
-                                class="ni-atom-a ni-atom-footerlinks">Private Accounts</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <div class="col-3">
-
-                    <ul class="ni-molc-footer-list">
-                        <h4 class="ni-atom-h2 ni__greycard-h2">Investor Resources</h4>
-                        <li class="list-unstyled ni-atom-footerlinks"><a href="../invest"
-                                class="ni-atom-a ni-atom-footerlinks">How to Invest</a>
-                        </li>
-                        <li class="list-unstyled ni-atom-footerlinks"><a href="../tv"
-                                class="ni-atom-a ni-atom-footerlinks">NuanceTV</a></li>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <ul class="m-molc-footer-list">
-                        <h4 class="ni-atom-h2 ni__greycard-h2">Investor Resources</h4>
-                        <li class="ni-atom-footerlinks list-unstyled"><a href="../about"
-                                class="ni-atom-a ni-atom-footerlinks">About Us</a></li>
-                        <li class="ni-atom-footerlinks list-unstyled"><a href="../investment-team"
-                                class="ni-atom-a ni-atom-footerlinks">Investment Team</a></li>
-                    </ul>
-                </div>
-                <div class="col-3">
-
-                    <ul class="m-molc-footer-list">
-                        <h4 class="ni-atom-h2 ni__greycard-h2">Investor Resources</h4>
-                        <li class="list-unstyled m-footer-list"><a
-                                href="https://www.linkedin.com/company/nuance-investments-llc"
-                                class="ni-atom-a ni-atom-footerlinks" target="_blank"><img
-                                    src="https://res.cloudinary.com/auki-digital-solutions/image/upload/v1644575225/icons/iconsln.png"
-                                    class="me-2">On
-                                LinkedIn</a></li>
-                        <li class="list-unstyled m-footer-list list-unstyled"><a href=""
-                                class="ni-atom-a ni-atom-footerlinks" target="_blank"><img
-                                    src="https://res.cloudinary.com/auki-digital-solutions/image/upload/v1644575225/icons/iconstwiter.png"
-                                    class="me-2 ni-atom-footerlinks">On
-                                Twitter</a></li>
-                        <li class="list-unstyled m-footer-list"><a
-                                href="https://www.linkedin.com/company/nuance-investments-llc"
-                                class="ni-atom-a ni-atom-footerlinks" target="_blank"><img
-                                    src="https://res.cloudinary.com/auki-digital-solutions/image/upload/v1644575224/icons/iconsfb.png"
-                                    class="me-2 ni-atom-footerlinks">On
-                                Facebook</a></li>
-                    </ul>
-                </div>
-
-            </div>
-            <div class="row pt-3">
-                <ul class="d-flex n-molicule-footer-listitems">
-                    <li class="ps-lg-2 ps-0 pe-1 list-unstyled n-atom-footerlistitems"><a href="../legal"
-                            class="ni-atom-a ni-atom-footerlinks">©
-                            Nuance Investments LLC, All rights reserved.</a></li>
-                    <li style="border-left: 1px solid #bec5c7;" class="px-1 list-unstyled"><a
-                            href="/uploads/PrivacyPolicy.pdf" target="_blank"
-                            class="ni-atom-a ni-atom-footerlinks">Privacy statement</a></li>
-                    <li style="border-left: 1px solid #bec5c7;" class="px-1 list-unstyled"><a href="../disclosures"
-                            class="ni-atom-a ni-atom-footerlinks">Disclosures</a></li>
-                    <li style="border-left: 1px solid #bec5c7;" class="px-1 list-unstyled"><a
-                            href="/uploads/ADVPartII.pdf" target="_blank"
-                            class="ni-atom-a ni-atom-footerlinks">Disclosure Brochure</a></li>
-                    <li style="border-left: 1px solid #bec5c7;" class="px-1 list-unstyled"><a
-                            href="/pdf/Nuance Form CRS (Final).pdf" target="_blank"
-                            class="ni-atom-a ni-atom-footerlinks">Form CRS</a></li>
-                    <li style="border-left: 1px solid #bec5c7;" class="px-1 list-unstyled"><a
-                            href="/pdf/Nuance Form CRS (Final).pdf" target="_blank"
-                            class="ni-atom-a ni-atom-footerlinks ">Contact us</a></li>
-                </ul>
-                <p> &nbsp;</p>
-                <p class="ps-2 ni-atom-footerdescription">Nuance Investments, LLC • 4900 Main Street, Suite 220, Kansas
-                    City, MO 64112 </p>
-            </div>
-        </footer>
 
     </div>
+    <script src="assets/js/application.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

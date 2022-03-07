@@ -6,8 +6,8 @@
 
 .ni-team__gridwrapper
     display: grid
-    grid-template-columns: 174px 174px 174px
-    column-gap: 50px
+    grid-template-columns: 174px 174px
+    column-gap: 30px
     row-gap: 30px
 
 .ni-team__card
@@ -24,4 +24,23 @@
     font-style: normal
     font-weight: 400
 
+.ni-team__gridwrapper--my
+    margin-bottom: 58px
 
+@media screen and ( min-width: 768px )
+    .ni-team__p1
+        padding-right: 41px
+
+
+@media screen and ( min-width: 992px )
+    .ni-team__sidebar
+        position: absolute
+        // right: 21px
+        right: 0px
+
+    .ni-team__p1
+        padding-right: 51px
+
+    .ni-team__gridwrapper
+        grid-template-columns: 174px 174px 174px
+        column-gap: 50px
