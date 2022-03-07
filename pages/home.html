@@ -13,235 +13,232 @@
     <script src="https://use.fontawesome.com/8e14040649.js"></script>
 </head>
 <style>
-    .header-wrapper {
-        position: absolute !important;
-    }
-
-    .ni-atom-carouselindicator {
-        border-radius: 50% !important;
-        width: 7px !important;
-        height: 5px !important;
-        background-color: white !important;
-    }
-
-    .ni-atom-newsh3 {
-        font-size: 13px;
-        color: white;
-        font-weight: bold;
-        padding-left: 10px;
-        margin: 0px;
-    }
-
-    .ni-atom-carouselimg {
-        object-fit: cover;
-    }
-    .ni-navmenu__nav-a-home{
-    color: white !important;
+.header-wrapper {
+position: absolute !important;
 }
 
-    @media only screen and (max-width: 767px) {
-        .container-fluid {
-            padding: 0px !important;
-        }
-
-        .carousel-caption {
-            width: auto;
-            height: 280px;
-            text-align: left !important;
-            padding: 0px !important;
-            bottom: 30% !important;
-            text-align: center !important;
-            background: rgba(33, 39, 44, 0.9);
-            left: 0;
-            right: 0;
-        }
-
-        .ni-atom-iconcontains {
-            width: 96% !important;
-        }
-
-        .n-carouseltv__overlay {
-            max-width: 410px;
-            height: 300px !important;
-            background: #FFFFFF !important;
-            opacity: .9;
-        }
-
-        .carousel-indicators {
-            bottom: 12px !important;
-        }
-
-        .ni-atom-carouselimg {
-            height: 100vh;
-        }
-
-        .ni-atom-newsh3 {
-            font-size: 13px;
-            color: white;
-            font-weight: bold;
-            padding-left: 10px;
-        }
-
-        .ni-gridwrapper {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            padding: 10px;
-            gap: 10px;
-        }
-        .ni-atom-button {
-            font-size: 10px;
-        }
-        .header-wrapper__home {
-   width: 100%;
+.ni-atom-carouselindicator {
+border-radius: 50% !important;
+width: 7px !important;
+height: 5px !important;
+background-color: white !important;
 }
 
-    }
-
-    @media only screen and (min-width: 768px) {
-        body{
-            padding: 0px !important;
-        }
-        .ni-carousel-indicators {
-            right: 0 !important;
-            bottom: -10px !important;
-            width: 7% !important;
-            left: 69% !important;
-
-        }
-
-        .n-carouseltv__overlay {
-            max-width: 410px;
-            height: 215px !important;
-            background: #FFFFFF !important;
-            opacity: .9;
-        }
-
-        .carousel-caption {
-            position: absolute !important;
-            width: 600px !important;
-            text-align: left !important;
-            padding: 0px !important;
-            bottom: 8% !important;
-            height: 195px !important;
-            background: rgba(33, 39, 44, 0.9);
-            left: 10%;
-        }
-
-        .n-carouseltv__overlay {
-            max-width: 410px;
-            height: 195px !important;
-            background: #FFFFFF !important;
-            opacity: .9;
-        }
-
-        .ni-carousel-indicators {
-            right: 0 !important;
-
-            color: white !important;
-            width: 6% !important;
-            left: 70% !important;
-
-        }
-
-        .ni-atom-iconcontains {
-            width: 5% !important;
-        }
-
-        .ni-gridwrapper {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            padding: 5px;
-            gap: 10px;
-        }
-
-.ni-navmenu__nav-li-home{
-    width: 115px;
+.ni-atom-newsh3 {
+font-size: 13px;
+color: white;
+font-weight: bold;
+padding-left: 10px;
+margin: 0px;
 }
-.ni__navmenu-innerhome {
-    width: 235px !important;
+
+.ni-atom-carouselimg {
+object-fit: cover;
+}
+.ni-navmenu__nav-a-home{
+color: white !important;
+}
+
+@media only screen and (max-width: 767px) {
+.container-fluid {
+padding: 0px !important;
+}
+
+.carousel-caption {
+width: auto;
+height: 280px;
+text-align: left !important;
+padding: 0px !important;
+bottom: 30% !important;
+text-align: center !important;
+background: rgba(33, 39, 44, 0.9);
+left: 0;
+right: 0;
+}
+
+.ni-atom-iconcontains {
+width: 96% !important;
+}
+
+.n-carouseltv__overlay {
+max-width: 410px;
+height: 300px !important;
+background: #FFFFFF !important;
+opacity: .9;
+}
+
+.carousel-indicators {
+bottom: 12px !important;
+}
+
+.ni-atom-carouselimg {
+height: 100vh;
+}
+
+.ni-atom-newsh3 {
+font-size: 13px;
+color: white;
+font-weight: bold;
+padding-left: 10px;
+}
+
+.ni-gridwrapper {
+display: grid;
+grid-template-columns: repeat(1, 1fr);
+padding: 10px;
+gap: 10px;
+}
+.ni-atom-button {
+font-size: 10px;
 }
 .header-wrapper__home {
-    margin-left: 10px;
+width: 100%;
 }
 
-    }
-
-    @media only screen and (min-width: 962px) {
-        .ni-atom-iconcontains {
-            width: 3% !important;
-        }
-
-        .carousel-caption {
-            width: 600px !important;
-            text-align: left !important;
-            padding: 0px !important;
-            bottom: 23% !important;
-            height: 245px !important;
-            background: rgba(33, 39, 44, 0.9);
-            left: 15% !important;
-        }
-
-        .n-carouseltv__overlay {
-            max-width: 410px;
-            height: 215px !important;
-            background: #FFFFFF !important;
-            opacity: .9;
-        }
-
-        .ni-carousel-indicators {
-            right: 0 !important;
-            top: 93%;
-            color: white !important;
-            width: 5% !important;
-            left: 73.5% !important;
-
-        }
-
-        .ni-atom-carouselimg {
-            height: 508px;
-        }
-
-        .ni-gridwrapper {
-            display: grid;
-            grid-template-columns: 310px 310px 310px;
-            justify-content: center;
-            gap: 20px;
-        }
-        .ni__navmenu-innerhome {
-    width: auto !important;
 }
 
-        .ni-atom-news {
-            width: 42% !important;
-            text-align: center;
-        }
-        .ni-footer__wrapperbottom{
-    width: 960px !important;
+@media only screen and (min-width: 768px) {
+body{
+padding: 0px !important;
+}
+.ni-carousel-indicators {
+right: 0 !important;
+bottom: -10px !important;
+width: 7% !important;
+left: 69% !important;
+}
+
+.n-carouseltv__overlay {
+max-width: 410px;
+height: 215px !important;
+background: #FFFFFF !important;
+opacity: .9;
+}
+
+.carousel-caption {
+position: absolute !important;
+width: 600px !important;
+text-align: left !important;
+padding: 0px !important;
+bottom: 10% !important;
+height: 185px !important;
+background: rgba(33, 39, 44, 0.9);
+left: 10%;
+}
+
+.n-carouseltv__overlay {
+max-width: 410px;
+height: 195px !important;
+background: #FFFFFF !important;
+opacity: .9;
+}
+
+.ni-carousel-indicators {
+right: 0 !important;
+color: white !important;
+width: 6% !important;
+left: 70% !important;
+
+}
+.ni-atom-iconcontains {
+width: 5% !important;
+}
+.ni-gridwrapper {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+padding: 5px;
+gap: 10px;
+}
+.ni-navmenu__nav-li-home{
+width: 132px;
+}
+.ni__navmenu-innerhome {
+width: 235px !important;
+}
+.header-wrapper__home {
+margin-left: 28px;
+}
+.ni-carousel-homepadd{
+    padding:0px 30px; 
+    top: 10px !important;
+}
+}
+
+@media only screen and (min-width: 962px) {
+.ni-atom-iconcontains {
+width: 3% !important;
+}
+
+.carousel-caption {
+width: 600px !important;
+text-align: left !important;
+padding: 0px !important;
+bottom: 23% !important;
+height: 245px !important;
+background: rgba(33, 39, 44, 0.9);
+left: 15% !important;
+}
+
+.n-carouseltv__overlay {
+max-width: 410px;
+height: 215px !important;
+background: #FFFFFF !important;
+opacity: .9;
+}
+
+.ni-carousel-indicators {
+right: 0 !important;
+top: 93%;
+color: white !important;
+width: 5% !important;
+left: 73.5% !important;
+
+}
+
+.ni-atom-carouselimg {
+height: 508px;
+}
+
+.ni-gridwrapper {
+display: grid;
+grid-template-columns: 310px 310px 310px;
+justify-content: center;
+gap: 20px;
+}
+.ni__navmenu-innerhome {
+width: auto !important;
+}
+
+.ni-atom-news {
+width: 42% !important;
+text-align: center;
+}
+.ni-footer__wrapperbottom{
+width: 960px !important;
 }
 .ni-atom-borderleft{
-    border-left: 1px solid #bec5c7;
+border-left: 1px solid #bec5c7;
 
 }
 .n-molicule-footer-listitems{
-    display: flex;
+display: flex;
 }
 .ni-navmenu__nav-li-home{
-    width: 170px;
+width: 194px;
 }
 .header-wrapper__home {
-    margin-left: 150px;
+margin-left: 150px;
 }
 .ni__carouselsubp{
 margin-top: 25px;
 }
-hr{
-    margin: 10px 0px;
-}
-.ni__carouselmidcapp{
-margin: 5px 0px;
+.ni-carousel-homepadd{
+    padding:20px 30px; 
+    top: 10px !important;
 }
 
-    }
+
+}
 </style>
 
 
@@ -503,7 +500,7 @@ margin: 5px 0px;
                 <div class="carousel-item active">
                     <img src="assets/naunce-tv-c2.jpg" class="d-block w-100 ni-atom-carouselimg" alt="...">
                     <div class="carousel-caption">
-                        <div style="padding:20px 30px; top: 10px !important;">
+                        <div class="ni-carousel-homepadd" >
                             <h4 class="ni-atom-h4 ni__carouselh4"> Value. Delivered.</h4>
                             <div class="row">
                                 <div class="col-6">
@@ -535,7 +532,7 @@ margin: 5px 0px;
                 <div class="carousel-item">
                     <img src="assets/naunce-tv-c3.jpg" class="d-block w-100 ni-atom-carouselimg" alt="...">
                     <div class="carousel-caption">
-                        <div style="padding:20px 30px; top: 10px !important;">
+                        <div class="ni-carousel-homepadd" >
                             <h4 class="ni-atom-h4 ni__carouselh4">Value. Delivered.</h4>
                             <div class="row">
                                 <div class="col-6">
@@ -569,7 +566,7 @@ margin: 5px 0px;
                 <div class="carousel-item">
                     <img src="assets/nuance-tv-c1.jpg" class="d-block w-100 ni-atom-carouselimg" alt="...">
                     <div class="carousel-caption">
-                        <div style="padding:20px 30px; top: 10px !important;">
+                        <div class="ni-carousel-homepadd" >
                             <h4 class="ni-atom-h4 ni__carouselh4">Nuance Concentrated
                                 Value Sharpe Ratio11</h4>
 
@@ -598,7 +595,7 @@ margin: 5px 0px;
                 <div class="carousel-item">
                     <img src="assets/nuance-tv-c1.jpg" class="d-block w-100 ni-atom-carouselimg" alt="...">
                     <div class="carousel-caption">
-                        <div style="padding:20px 30px; top: 10px !important;">
+                        <div class="ni-carousel-homepadd">
                             <h4 class="ni-atom-h4 ni__carouselh4">Nuance Concentrated
                                 Value Sharpe Ratio</h4>
 
