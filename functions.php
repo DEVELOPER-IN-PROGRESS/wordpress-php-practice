@@ -3,9 +3,15 @@
 function naunce_theme_styles() {
     wp_enqueue_style('bootstrap' , get_template_directory_uri().'/bootstrap.css');
     wp_enqueue_style('style' ,get_stylesheet_directory_uri().'/style.css');
-
 }
+
 add_action('wp_enqueue_scripts' , 'naunce_theme_styles');
+
+function nuance_theme_scripts(){
+    wp_enqueue_script( 'application', get_template_directory_uri().'/assets/js/application.js' );
+}
+
+add_action( 'wp_enqueue_scripts' ,'nuance_theme_scripts');
 
 function naunce_widgets_init(){
     register_sidebar( array(
@@ -22,8 +28,67 @@ function naunce_widgets_init(){
 }
 add_action('widgets_init' ,'naunce_widgets_init');
 
+class nuance_primary_menu extends Walker_Nav_Menu {
+    function start_el(&$output, $item, $depth=0, $args=[], $id=0) {
+        $submenu = ($depth> 0 )? 'sub-menu' : '';
 
 
+    $classes   = empty( $menu_item->classes ) ? array() : (array) $menu_item->classes;
+    $classes[] = 'menu-item-' . $menu_item->ID;
+
+    // var_dump($classes);
+
+ //    $args = apply_filters( 'ni-navmenu__nav-li', $args, $menu_item, $depth );
+
+
+		 $output .= "<li class='" .  implode(" ", $item->classes) . " ni-navmenu__nav-li'>";
+
+		if ($item->url && $item->url != '#') {
+			$output .= '<a class="d-none d-md-block ni-atom-a ni-navmenu__nav-a " href="' . $item->url . '">'.
+            '<p>'.$item->title.'</p>'.
+            '</a>
+            <button class="ni-header__accordion d-md-none">'
+            .$item->title.
+            '</button>';
+		} else {
+			$output .= '<span>';
+		}
+
+
+		// if ($item->url && $item->url != '#') {
+		// 	$output .= ;
+
+		// } else {
+		// 	$output .= '</span>';
+		// }
+    }
+
+   function end_el(&$output, $item, $depth=0, $args=null){
+       $src= get_template_directory_uri().'/assets/thin.png' ;
+       $output .=  '</li>'
+        .'<li> <img src="'.$src.'" width="2" alt="narrow" class="d-none d-md-block"/></li>' ;
+   }
+
+    // function start_lvl(&$output, $depth=0 ,$args=array())
+    // {
+    //     $indent = str_repeat("\t", $depth);
+    //     $output .= "\n$indent
+    //     <div class=\"ni-header__accordion-panel text-left\">
+    //      <ul class=\"ni-header__accordion-list\">\n";
+    // }
+
+    // function end_lvl(&$output, $depth=0 ,$args=array())
+    // {
+    //        $src= get_template_directory_uri().'/assets/thin.png' ;
+    //   //  $output .=  '</li>';
+    //     //.'<li> <img src="'.$src.'" width="2" alt="narrow" class="d-none d-md-block"/></li>' ;
+
+    //     $indent = str_repeat("\t", $depth);
+    //     $output .= "\n$indent'</li><li> <img src=\"$src\"width=\"2\" alt=\"narrow\" class=\"d-none d-md-block\"/></li>";
+    // }
+
+}
+// require get_template_directory(). '/inc/walker.php' ;
     class wpb_widget extends WP_Widget {
 
         function __construct() {

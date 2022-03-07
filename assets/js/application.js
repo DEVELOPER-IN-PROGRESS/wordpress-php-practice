@@ -1,3 +1,4 @@
+//alert('caricato');
 let isIconClicked = false ;
 let headerAccordion = document.querySelectorAll('.ni-header__accordion');
 let listElems = document.querySelectorAll('.ni-navmenu__nav-li');
@@ -39,7 +40,9 @@ function closePanels(){
 
 function niAccordion(){
        closePanels();
+      console.log(this)
     let  panel = this.nextElementSibling;
+    console.log(panel)
     panel.style.display = 'block';
      if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
@@ -64,16 +67,18 @@ function niCloseDropdown(){
 }
 
 function headerMenu(){
-    console.log(window.innerWidth)
-    let length = window.innerWidth ;
+     let length = window.innerWidth ;
     if(length> 767 && length < 992){
        let linklist = document.querySelectorAll('.ni-navmenu__nav-a');
+       let dropDownList = document.querySelectorAll('.ni-header__accordion-panel');
 
-         linklist.forEach( (item) =>{
-         item.addEventListener('click' , (e)=> {e.preventDefault()  } )
-        item.href='#'
-     })
+       linklist.forEach( (item) =>{
+        item.addEventListener('click' , (e)=> {e.preventDefault() ; } )
+       item.href='#'
+    })
+
     }
+
 }
 
 

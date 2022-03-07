@@ -50,7 +50,7 @@ $liwidth : calc( ( 100vw - 20px ) / 6 )
     list-style-type: none
     display: flex
     justify-content: space-between
-
+  
 .ni-header__accordion
     background-color: #eee
     color: #444
@@ -147,6 +147,10 @@ $liwidth : calc( ( 100vw - 20px ) / 6 )
     .ni-header__accordion-list > li
       padding-left: 10px
 
+
+    .ni-header__accordion:focus + .ni-header__accordion-panel
+      display: block
+
 @media screen and ( min-width: 768px)
     .hamburger
         display: none
@@ -164,6 +168,10 @@ $liwidth : calc( ( 100vw - 20px ) / 6 )
       padding: 0px
       align-items: center
       height: 36px
+
+    .ni-navmenu__nav > li
+       &:last-child
+          display: none
 
     .ni-navmenu__nav-li
        display: flex
@@ -199,42 +207,6 @@ $liwidth : calc( ( 100vw - 20px ) / 6 )
 
     .panel-left
       right: 0px
-
-    // .ni-header__accordion-panel
-    //    &:nth-of-type(1)
-    //       left: 0px
-    //       //  &:nth-of-type(1)
-    //       //  &:nth-of-type(2)
-    // div.ni-header__accordion-panel
-    //   &:nth-of-type(1)
-    //   &:nth-of-type(2)
-    //   &:nth-of-type(3)
-    //     left: 0px
-
-
-    // div.ni-header__accordion-panel
-    //    &:nth-of-type(2)
-    //     padding:  0px
-
-    // .ni-navmenu__nav-li > .ni-header__accordion-panel
-    //    &:nth-of-type(2)
-    //     right: 0px
-
-    // .ni-navmenu__nav-li .ni-header__accordion-panel
-    //    &:nth-child(0)
-    //      left: 0px !important
-    //      background-color: red
-    // .ni-header__accordion-panel
-    //    &:nth-child(1)
-    //      left: 0px !important
-    // .ni-header__accordion-panel
-    //    &:nth-child(2)
-    //      left: 0px !important
-
-    // .ni-header__accordion-panel
-    //   &:nth-child(5)
-    //     opacity: 1
-    //     background-color: red
 
     .ni-navmenu__nav .ni-navmenu__nav-li
        &:nth-child(-2n+5) .ni-header__accordion-panel
@@ -272,9 +244,6 @@ $liwidth : calc( ( 100vw - 20px ) / 6 )
     .header-wrapper
       max-width: 980px
 
-    // .ni__header
-    //   margin: 20px auto 0px auto
-
     .ni__navmenu-inner-li
       border-left: 1px solid #4f97cd
 
@@ -300,14 +269,10 @@ $liwidth : calc( ( 100vw - 20px ) / 6 )
     .ni-header__accordion-panel
       left: 0px !important
 
-    .ni-header__accordion-panel
-        &:last-child
-        //min-width: 320px
+    // .ni-header__accordion-panel
+    //     &:last-child
+    //     //min-width: 320px
 
-    // .ni-header__accordion-list
-    //     min-width: 150px
-    //     max-width: 300px
-    //     width: fit-content
 
     .ni-navmenu__nav-li
         width: 130px
