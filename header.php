@@ -48,20 +48,37 @@
         </div>
 
         <div class="d-md-block">
-          <ul class="ni__navmenu-inner list-style-none text-center">
-            <li class="ni__navmenu-inner-li">
-              <a class="ni-atom-a ni__navmenu-a" href="/">Home</a>
-            </li>
-            <li class="ni__navmenu-inner-li">
-              <a class="ni-atom-a ni__navmenu-a" href="/about">About us</a>
-            </li>
-            <li class="ni__navmenu-inner-li">
-              <a class="ni-atom-a ni__navmenu-a" href="/contact">Contact us</a>
-            </li>
-            <li class="ni__navmenu-inner-li">
-              <a class="ni-atom-a ni__navmenu-a" href="/news">News</a>
-            </li>
+          <?php
+            $picmenu = wp_get_nav_menu_items('mobile menu');
+          ?>
+          <ul class="list-unstyled d-md-none ni__navmenu-inner">
+
+            <?php
+                if($picmenu){
+              for($k=0 ; $k< count($picmenu); $k++ ){
+                echo "<li><a class=\"ni-atom-a ni__navmenu-a\" href=\"".$picmenu[$k]->url."\">".
+                $picmenu[$k]->title."</a></li>";
+              }
+            }
+            ?>
           </ul>
+          <div class="d-none d-md-block">
+              <ul class="ni__navmenu-inner list-unstyled text-center">
+                <li class="ni__navmenu-inner-li">
+                  <a class="ni-atom-a ni__navmenu-a" href="/">Home</a>
+                </li>
+                <li class="ni__navmenu-inner-li">
+                  <a class="ni-atom-a ni__navmenu-a" href="/about">About us</a>
+                </li>
+                <li class="ni__navmenu-inner-li">
+                  <a class="ni-atom-a ni__navmenu-a" href="/contact">Contact us</a>
+                </li>
+                <li class="ni__navmenu-inner-li">
+                  <a class="ni-atom-a ni__navmenu-a" href="/news">News</a>
+                </li>
+              </ul>
+          </div>
+
         </div>
 
         <div class="nav_wrapper d-md-block ni-header__sidebar" id="navmenu2">
@@ -76,57 +93,56 @@
           <ul class="ni-navmenu__nav">
               <?php
               $menu = wp_get_nav_menu_items('Navigation Menu');
-
+              //echo count($menu);
               $thinline = get_template_directory_uri().'/assets/thin.png' ;
                 $i = 0 ;
 
-                for ($i=0 ; $i<28; $i++) {
-                    if(!$menu[$i]->menu_item_parent){
-                      $menuid = $menu[$i]->ID ;  //1630
-                      echo "<li  class=\"ni-navmenu__nav-li\">".
+                if ($menu) {
+                    for ($i=0 ; $i<count($menu); $i++) {
+                        if (!$menu[$i]->menu_item_parent) {
+                            $menuid = $menu[$i]->ID ;  //1630
+                            echo "<li  class=\"ni-navmenu__nav-li\">".
                       "\n <a class=\"d-none d-md-block ni-atom-a ni-navmenu__nav-a \"
                               href=\"".$menu[$i]->url."\">" .
                                 "\n<p>".$menu[$i]->post_title."</p>".
                                 "</a>" ;
 
-                      echo  "<button onclick=\"niAccordion();\" class=\"ni-header__accordion d-md-none\">
+                            echo  "<button onclick=\"niAccordion();\" class=\"ni-header__accordion d-md-none\">
                       <a href=\"".$menu[$i]->url."\" class=\"ni-atom-a\">".
                       $menu[$i]->post_title. // About us
                       "</a>".
                           "</button>" ;
+                            $description = $menu[$i]->description ;
+                            ++$i;
+                            $menuid =(string)$menuid ;
 
-                          $description = $menu[$i]->description ;
-                        ++$i;
-
-                        $menuid =(string)$menuid ;
-
-                        if($menu[$i]->menu_item_parent == $menuid){
-                          echo "<div class=\"ni-header__accordion-panel text-left\">
+                            if ($menu[$i]->menu_item_parent == $menuid) {
+                                echo "<div class=\"ni-header__accordion-panel text-left\">
                           \n<ul class=\"ni-header__accordion-list\">";
-                          while($menu[$i]->menu_item_parent == $menuid){
-                            echo "<li>
+                                while ($menu[$i]->menu_item_parent == $menuid) {
+                                    echo "<li>
                                   <a target=\"__blank\" class=\"ni-atom-a ni-header__accordion-link\"".
-                                "href=\"".$menu[$i]->url."\">".$menu[$i]->post_title .
+                                "href=\"".$menu[$i]->url."\">".$menu[$i]->post_title.
                               "</a></li>";
-                              ++$i;
-                          }
-                          echo "</ul>";
+                                    ++$i;
+                                }
+                                echo "</ul>";
 
-                          if($description){
-                            echo "<div class=\"ni-header__accordion-p\">
+                                if ($description) {
+                                    echo "<div class=\"ni-header__accordion-p\">
                             <p class=\"ni-atom-p\">";
-                            echo $description;
-                            echo  "</p>
+                                    echo $description;
+                                    echo  "</p>
                             </div>" ;
-                          }
+                                }
 
-                          echo "</div>" ;
-                        }
+                                echo "</div>" ;
+                            }
 
-                        --$i;
-                        // while loop
+                            --$i;
+                            // while loop
 
-                      echo  "\n</li>".
+                            echo  "\n</li>".
                           "\n<li>".
                           "<img src=".$thinline."
                               width=\"2\"
@@ -134,6 +150,7 @@
                               class=\"d-none d-md-block\"
                             />
                           </li>" ;
+                        }
                     }
                 }
               ?>

@@ -1,4 +1,4 @@
-//alert('caricato');
+// alert('caricato');
 let isIconClicked = false ;
 let headerAccordion = document.querySelectorAll('.ni-header__accordion');
 let listElems = document.querySelectorAll('.ni-navmenu__nav-li');

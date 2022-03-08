@@ -1,5 +1,5 @@
 <div class="sidecard-wrapper ">
-            <div class="centerdiv ni-about__sidebar ni-team__sidebar">
+            <div class="mx-auto mx-md-0 ni-about__sidebar ni-team__sidebar">
                 <h3 class="ni-atom-h2 ni__greycard-h2">How to invest</h3>
 
                 <p class="ni-atom-p ni__greycard-p">Nuance has been managing portfolios for individuals and institutions using the same classic value investment philosophy since first registering as an investment advisor in 2008. If you would like to receive material describing our services, including our historical performance records, please contact us.<br><br>
