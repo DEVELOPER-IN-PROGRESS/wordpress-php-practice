@@ -92,6 +92,7 @@
           <nav class="text-center">
           <ul class="ni-navmenu__nav">
               <?php
+              $id=0;
               $menu = wp_get_nav_menu_items('Navigation Menu');
               //echo count($menu);
               $thinline = get_template_directory_uri().'/assets/thin.png' ;
@@ -107,7 +108,7 @@
                                 "\n<p>".$menu[$i]->post_title."</p>".
                                 "</a>" ;
 
-                            echo  "<button onclick=\"niAccordion();\" class=\"ni-header__accordion d-md-none\">
+                            echo  "<button id=\"id".$id++ ."\" class=\"ni-header__accordion d-md-none\">
                       <a href=\"".$menu[$i]->url."\" class=\"ni-atom-a\">".
                       $menu[$i]->post_title. // About us
                       "</a>".
@@ -117,11 +118,11 @@
                             $menuid =(string)$menuid ;
 
                             if ($menu[$i]->menu_item_parent == $menuid) {
-                                echo "<div class=\"ni-header__accordion-panel text-left\">
+                                echo "<div class=\"ni-header__accordion-panel \">
                           \n<ul class=\"ni-header__accordion-list\">";
                                 while ($menu[$i]->menu_item_parent == $menuid) {
                                     echo "<li>
-                                  <a target=\"__blank\" class=\"ni-atom-a ni-header__accordion-link\"".
+                                  <a  class=\"ni-atom-a ni-header__accordion-link\"".
                                 "href=\"".$menu[$i]->url."\">".$menu[$i]->post_title.
                               "</a></li>";
                                     ++$i;

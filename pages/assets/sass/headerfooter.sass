@@ -5,6 +5,18 @@ $liwidth : calc( ( 100vw - 20px ) / 6 )
    z-index: 900!important
    //margin-bottom: 10px
 
+.d-none
+  display: none !important
+
+.d-block
+  display: block !important
+
+.list-unstyled
+  list-style-type: none!important
+
+.text-center 
+  text-align: center !important
+
 .ni-header__dropdown
    display: block
 
@@ -63,6 +75,9 @@ $liwidth : calc( ( 100vw - 20px ) / 6 )
     outline: none
     font-size: 15px
     transition: 0.4s
+
+// .ni-header__accordion:focus + .ni-header__accordion-panel
+//       display: block
 
 .active, .ni-header__accordion:hover
   background-color: #ccc
@@ -148,12 +163,15 @@ $liwidth : calc( ( 100vw - 20px ) / 6 )
       padding-left: 10px
 
 
-    .ni-header__accordion:focus + .ni-header__accordion-panel
-      display: block
-
 @media screen and ( min-width: 768px)
     .hamburger
         display: none
+
+    .d-md-none
+      display: none !important
+
+    .d-md-block
+      display: block !important
 
     .header-wrapper
       margin: 26px auto 0px auto
@@ -243,6 +261,12 @@ $liwidth : calc( ( 100vw - 20px ) / 6 )
 @media screen and ( min-width: 992px)
     .header-wrapper
       max-width: 980px
+
+    .d-lg-none
+      display: none !important
+
+    .d-lg-block
+      display: block !important
 
     .ni__navmenu-inner-li
       border-left: 1px solid #4f97cd

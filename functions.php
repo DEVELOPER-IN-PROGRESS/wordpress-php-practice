@@ -1,5 +1,7 @@
 <?php
 
+require_once 'elemento.php';
+
 function naunce_theme_styles() {
     wp_enqueue_style('bootstrap' , get_template_directory_uri().'/bootstrap.css');
     wp_enqueue_style('style' ,get_stylesheet_directory_uri().'/style.css');
@@ -8,10 +10,10 @@ function naunce_theme_styles() {
 add_action('wp_enqueue_scripts' , 'naunce_theme_styles');
 
 function nuance_theme_scripts(){
-    wp_enqueue_script( 'application', get_template_directory_uri().'/assets/js/application.js' );
+    wp_enqueue_script( 'application', get_template_directory_uri().'/assets/js/application.js', array(), '' , true);
 }
 
-add_action( 'wp_enqueue_scripts' ,'nuance_theme_scripts');
+add_action( 'after_body' ,'nuance_theme_scripts');
 
 function naunce_widgets_init(){
     register_sidebar( array(

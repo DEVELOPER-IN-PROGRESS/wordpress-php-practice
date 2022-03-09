@@ -22,9 +22,10 @@ get_header();
 
                 <div class="px-2 px-md-0 pe-md-5 col-12 col-sm-12 col-md-8 col-lg-8">
 
-                        <h1 class="ni-atom-h1 ni-person__h1 pb-3 "><?php echo the_field('personality_name'); ?></h1>
+                        <h1 class="ni-atom-h1 ni-person__h1 pb-3 "><?php if(the_field('personality_name')) echo the_field('personality_name'); ?></h1>
 
-                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="ni-atom-img ni-person__img" />
+
+                        <img src="<?php if($image) echo $image['url']; ?>" alt="<?php if($image) echo $image['alt']; ?>" class="ni-atom-img ni-person__img" />
 
                         <p class="pt-md-3">&nbsp;</p>
 

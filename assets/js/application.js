@@ -1,7 +1,6 @@
-// alert('caricato');
+//alert('loaded');
 let isIconClicked = false ;
 let headerAccordion = document.querySelectorAll('.ni-header__accordion');
-let listElems = document.querySelectorAll('.ni-navmenu__nav-li');
 
 function hamBurger(x) {
      x.classList.toggle("change");
@@ -18,11 +17,9 @@ function openCloseMenu(){
 
      if(isIconClicked){
        document.getElementById('navmenu2').classList.toggle('ni-header__sidebar--active');
-     }
-
-     else{
+     }else{
        document.getElementById('navmenu2').classList.remove('ni-header__sidebar--active');
-        closePanels();
+       closePanels();
     }
 }
 
@@ -38,19 +35,24 @@ function closePanels(){
     })
 }
 
-function niAccordion(){
-       closePanels();
-      console.log(this)
-    let  panel = this.nextElementSibling;
-    console.log(panel)
-    panel.style.display = 'block';
-     if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-      panel.style.display = 'none';
+function LoadVariables(){
+    headerAccordion = document.querySelectorAll('.ni-header__accordion');
+    headerAccordion.forEach( (el) => el.addEventListener('click', niAccordion ) )
+}
 
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-      panel.style.display = 'block' ;
+function niAccordion(e){
+       closePanels();
+       console.log(this);
+     let  panel = e.srcElement.nextElementSibling;
+     if(panel){
+        panel.style.display = 'block';
+        if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+        panel.style.display = 'none';
+        } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+        panel.style.display = 'block' ;
+        }
     }
 }
 
@@ -84,5 +86,6 @@ function headerMenu(){
 
 headerAccordion.forEach( (el) => el.addEventListener('click', niAccordion ) )
 window.addEventListener( 'DOMContentLoaded' , headerMenu) ;
+//window.addEventListener( 'DOMContentLoaded' , LoadVariables) ;
 //listElems.forEach( (el) => el.addEventListener('mouseover', niDropdown ) )
 //listElems.forEach( (el) => el.addEventListener('mouseout', niCloseDropdown ) )
